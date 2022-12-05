@@ -80,15 +80,27 @@ vhf_upload:
     TOKEN=NOT_SET
 
     if [ $OAUTH_ENABLED ]; then
-        echo "OAUTH IS ENABLED, FETCH TOKEN ..."
-        export $(xargs < $HOME/.dmu/credentials)
-        response=$(curl --silent --location --request POST "$IAM_TOKEN_ENDPOINT_URL" \
-        --header 'Content-Type: application/x-www-form-urlencoded' \
-        --data-urlencode "client_id=$client_id" \
-        --data-urlencode "client_secret=$client_secret" \
-        --data-urlencode 'grant_type=client_credentials')
-        TOKEN=$(jq -r '.access_token' <<< "${response}")
-        echo "TOKEN SUCCESSFULLY SET ..."
+
+        if [ -r $HOME/.dmu/credentials ]; then
+            
+            export $(xargs < $HOME/.dmu/credentials)
+            
+            echo "OAUTH IS ENABLED, CREDENTIALS EXISTS, FETCH TOKEN ..."
+            echo "USE IAM_TOKEN_ENDPOINT_URL : $IAM_TOKEN_ENDPOINT_URL"
+            
+            response=$(curl $FETCH_TOKEN_CURL_OPTIONS POST "$IAM_TOKEN_ENDPOINT_URL" \
+            --header 'Content-Type: application/x-www-form-urlencoded' \
+            --data-urlencode "client_id=$client_id" \
+            --data-urlencode "client_secret=$client_secret" \
+            --data-urlencode 'grant_type=client_credentials')
+            
+            TOKEN=$(jq -r '.access_token' <<< "${response}")
+            
+            echo "TOKEN SUCCESSFULLY SET ..."
+        else
+            echo "UNABLE TO FIND 'credentials' FILE, ABORT ..."
+            exit 1
+        fi
     else
         echo "OAUTH IS NOT ENABLED, NO TOKEN FETCHED ..."
     fi
@@ -97,7 +109,7 @@ vhf_upload:
     count=0
     for fhirBundle in "${FILES[@]}"; do
     echo "Sending Testdata bundle $fhirBundle ..."
-    curl -X POST -H "Authorization: Bearer $TOKEN" -H "Content-Type: application/json" -d @"$fhirBundle" "$FHIR_STORE_URL"
+    curl $UPLOAD_CURL_OPTIONS -X POST -H "Authorization: Bearer $TOKEN" -H "Content-Type: application/json" -d @"$fhirBundle" "$FHIR_STORE_URL"
     count=$((count + 1))
     echo $count
     if [[ "$count" -eq 1000 ]]

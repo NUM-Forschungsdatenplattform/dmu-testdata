@@ -61,3 +61,51 @@ VHF-Testdaten_01-VHF09999.json
 VHF-Testdaten_01-VHF10000.json
 ```
 
+### Upload data
+
+With json files in place it's time for uploading the data to your FHIR store.
+Before doing that please provide some data in the `.env` file of this project:
+
+```
+# vars loaded by 'justfile'
+
+# to fetch a token to be used during upload
+# set 'OAUTH_ENABLED' to 'true'
+OAUTH_ENABLED=false
+
+# url to the IAM_TOKEN_ENDPOINT that the token will be
+# fetched from
+# https://{your-keycloak-domain}/auth/realms/{your-realm}/protocol/openid-connect/token
+IAM_TOKEN_ENDPOINT_URL=http://localhost:9090
+
+# url used to upload data files
+FHIR_STORE_URL=http://localhost:8082
+
+# in case of any error during token request
+# set more options here, eg. -v
+FETCH_TOKEN_CURL_OPTIONS="--silent --location --request"
+
+# in case of any error during data upload
+# set more options here, eg. -v
+UPLOAD_CURL_OPTIONS=""
+```
+
+#### OAUTH_ENABLED=true
+
+For FHIR stores secured with OAUTH, you have to set `OAUTH_ENABLED=true`.
+Furthermore yhou have to provide credentials. For that create a file `credentials` in `$HOME/.dmu`-folder
+with the following entries:
+
+```
+client_id={your_client_id}
+client_secret={your_client_secret}
+```
+
+If everything is configured, let's have a try:
+
+```
+just vhf_upload
+```
+
+
+
