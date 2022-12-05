@@ -93,7 +93,7 @@ UPLOAD_CURL_OPTIONS=""
 #### OAUTH_ENABLED=true
 
 For FHIR stores secured with OAUTH, you have to set `OAUTH_ENABLED=true`.
-Furthermore yhou have to provide credentials. For that create a file `credentials` in `$HOME/.dmu`-folder
+Furthermore you have to provide credentials. For that create a file `credentials` in `$HOME/.dmu`-folder
 with the following entries:
 
 ```
