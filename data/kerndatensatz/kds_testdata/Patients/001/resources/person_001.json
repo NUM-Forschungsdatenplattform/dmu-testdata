@@ -1,0 +1,81 @@
+{
+  "resourceType": "Patient",
+  "id": "001",
+  "meta": {
+    "profile": [
+      "https://www.medizininformatik-initiative.de/fhir/core/modul-person/StructureDefinition/Patient"
+    ]
+  },
+  "identifier": [
+    {
+      "use": "usual",
+      "type": {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+            "code": "MR"
+          }
+        ]
+      },
+      "system": "https://www.example.org/fhir/sid/patienten",
+      "value": "001",
+      "assigner": {
+        "display": "Hausarztpraxis Dr. med. Mustermann",
+        "identifier": {
+          "system": "http://example.com/organisation/identifier",
+          "value": "001234567"
+        }
+      }
+    },
+    {
+      "use": "official",
+      "type": {
+        "coding": [
+          {
+            "system": "http://fhir.de/CodeSystem/identifier-type-de-basis",
+            "code": "GKV"
+          }
+        ]
+      },
+      "system": "http://fhir.de/NamingSystem/gkv/kvid-10",
+      "value": "0123456789",
+      "assigner": {
+        "identifier": {
+          "use": "official",
+          "system": "http://example.de/aok/identifier",
+          "value": "5678910"
+        }
+      }
+    }
+  ],
+  "name": [
+    {
+      "use": "official",
+      "family": "Doe",
+      "given": ["John"]
+    }
+  ],
+  "address": [
+    {
+      "type": "both",
+      "line": ["Kölner Straße 4711"],
+      "city": "Düsseldorf",
+      "postalCode": "40210",
+      "country": "DE"
+    }
+  ],
+  "gender": "male",
+  "_gender": {
+    "extension": [
+      {
+        "url": "http://fhir.de/StructureDefinition/gender-amtlich-de",
+        "valueCoding": {
+          "system": "http://fhir.de/CodeSystem/gender-amtlich-de",
+          "code": "M",
+          "display": "männlich"
+        }
+      }
+    ]
+  },
+  "birthDate": "1956-10-12"
+}
