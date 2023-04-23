@@ -1,0 +1,49 @@
+{
+    "resourceType": "Encounter",
+    "id": "015",
+    "meta": {
+        "profile":  [
+            "https://www.medizininformatik-initiative.de/fhir/core/modul-fall/StructureDefinition/KontaktGesundheitseinrichtung"
+        ]
+    },
+    "status": "finished",
+    "identifier":  [
+        {
+            "type": {
+                "coding":  [
+                    {
+                        "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+                        "code": "VN"
+                    }
+                ]
+            },
+            "system": "http://medizininformatik-initiative.de/fhir/NamingSystem/Aufnahmenummer/PraxisMustermann",
+            "value": "F_0000069"
+        }
+    ],
+    "class": {
+        "code": "AMB",
+        "display": "ambulatory",
+        "system": "http://hl7.org/fhir/v3/ActCode/cs.html"
+    },
+    "subject": {
+        "reference": "Patient/015"
+    },
+    "serviceProvider": {
+        "identifier": {
+            "system": "http://medizininformatik-initiative.de/fhir/NamingSystem/Einrichtungsidentifikator/PraxisMustermann",
+            "value": "260123451_PraxisMustermann"
+        }
+    },
+    "diagnosis":  [
+        {
+            "condition": {
+                "reference": "Condition/015"
+            }
+        }
+    ],
+    "period": {
+        "start": "2023-04-12T07:00:00+01:00",
+        "end": "2023-04-13T05:00:00+01:00"
+    }
+}

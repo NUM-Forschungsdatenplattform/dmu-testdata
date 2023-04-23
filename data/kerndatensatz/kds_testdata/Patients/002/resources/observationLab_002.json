@@ -1,0 +1,121 @@
+{
+  "resourceType": "Observation",
+  "id": "002",
+  "meta": {
+    "profile": [
+      "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/ObservationLab"
+    ]
+  },
+  "identifier": [
+    {
+      "type": {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+            "code": "OBI"
+          }
+        ]
+      },
+      "system": "https://exmaple.org/fhir/sid/test-lab-results",
+      "value": "12345-6_1212l64890",
+      "assigner": {
+        "identifier": {
+          "system": "https://www.medizininformatik-initiative.de/fhir/core/CodeSystem/core-location-identifier",
+          "value": "DIZ-ID"
+        }
+      }
+    }
+  ],
+  "status": "final",
+  "category": [
+    {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "laboratory",
+          "display": "Laboratory"
+        },
+        {
+          "system": "http://loinc.org",
+          "code": "26436-6",
+          "display": "Laboratory studies (set)"
+        },
+        {
+          "system": "http://exmple.org/fhir/sid/Laborgruppe",
+          "code": "Niere/Elektrolyte"
+        }
+      ]
+    }
+  ],
+  "code": {
+    "coding": [
+      {
+        "system": "http://loinc.org",
+        "code": "38483-4",
+        "display": "Creatinine [Mass/volume] in Blood"
+      }
+    ],
+    "text": "Kreatinin"
+  },
+  "subject": {
+    "reference": "Patient/002"
+  },
+  "encounter": {
+    "reference": "Encounter/002"
+  },
+  "effectiveDateTime": "2023-04-16T12:00:00+01:00",
+  "_effectiveDateTime": {
+    "extension": [
+      {
+        "url": "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/QuelleKlinischesBezugsdatum",
+        "valueCoding": {
+          "system": "http://snomed.info/sct",
+          "code": "399445004",
+          "display": "Specimen collection date (observable entity)"
+        }
+      }
+    ]
+  },
+  "issued": "2023-04-16T12:00:00+01:00",
+  "performer": [
+    {
+      "reference": "Organization/001",
+      "display": "Zentrallabor"
+    }
+  ],
+  "valueQuantity": {
+    "value": 0.83,
+    "unit": "mg/dl",
+    "system": "http://unitsofmeasure.org",
+    "code": "mg/dl"
+  },
+  "interpretation": [
+    {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/v2-0078",
+          "code": "N"
+        }
+      ]
+    }
+  ],
+  "referenceRange": [
+    {
+      "low": {
+        "value": 0.6
+      },
+      "high": {
+        "value": 1.2
+      },
+      "type": {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/referencerange-meaning",
+            "code": "normal",
+            "display": "Normal Range"
+          }
+        ]
+      }
+    }
+  ]
+}

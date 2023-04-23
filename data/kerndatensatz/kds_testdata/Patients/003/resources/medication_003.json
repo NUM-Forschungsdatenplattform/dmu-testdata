@@ -1,0 +1,64 @@
+{
+  "resourceType": "Medication",
+  "id": "003",
+  "meta": {
+    "profile": [
+      "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/Medication"
+    ]
+  },
+  "code": {
+    "coding": [
+      {
+        "code": "00651329",
+        "system": "http://fhir.de/CodeSystem/ifa/pzn",
+        "display": "Metamizol 500 mg"
+      },
+      {
+        "code": "M01BA07",
+        "system": "http://fhir.de/CodeSystem/bfarm/atc",
+        "display": "Metamizol und Corticosteroide"
+      }
+    ]
+  },
+  "form": {
+    "coding": [
+      {
+        "code": "10219000",
+        "system": "http://standardterms.edqm.eu",
+        "display": "Tablet"
+      }
+    ]
+  },
+  "ingredient": [
+    {
+      "itemCodeableConcept": {
+        "coding": [
+          {
+            "code": "6429L0L52Y",
+            "system": "http://fdasis.nlm.nih.gov",
+            "display": "DIPYRONE"
+          },
+          {
+            "code": "780831000",
+            "system": "http://snomed.info/sct",
+            "display": "Metamizole (substance)"
+          }
+        ]
+      },
+      "strength": {
+        "numerator": {
+          "value": 500,
+          "code": "mg",
+          "system": "http://unitsofmeasure.org",
+          "unit": "milligram"
+        },
+        "denominator": {
+          "value": 1,
+          "code": "10219000",
+          "system": "http://standardterms.edqm.eu",
+          "unit": "Tablet"
+        }
+      }
+    }
+  ]
+}

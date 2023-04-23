@@ -1,0 +1,10 @@
+{
+    "resourceType": "ResearchStudy",
+    "id": "001",
+    "meta": {
+        "profile": [
+            "http://hl7.org/fhir/StructureDefinition/ResearchStudy"
+        ]
+    },
+    "status": "active"
+}

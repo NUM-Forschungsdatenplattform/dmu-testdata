@@ -1,0 +1,49 @@
+{
+  "resourceType": "Condition",
+  "id": "015",
+  "meta": {
+    "profile": [
+      "https://www.medizininformatik-initiative.de/fhir/core/modul-diagnose/StructureDefinition/Diagnose"
+    ]
+  },
+  "clinicalStatus": {
+    "coding": [
+      {
+        "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+        "code": "active"
+      }
+    ]
+  },
+  "verificationStatus": {
+    "coding": [
+      {
+        "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+        "code": "confirmed"
+      },
+      {
+        "system": "http://fhir.de/CodeSystem/dimdi/icd-10-gm",
+        "version": "2023",
+        "code": "I46.0",
+        "display": "Herzstillstand mit erfolgreicher Wiederbelebung"
+      }
+    ]
+  },
+  "code": {
+    "coding": [
+      {
+        "system": "http://snomed.info/sct",
+        "code": "410429000",
+        "display": "Cardiac Arrest"
+      }
+    ],
+    "text": "Cardiac Arrest"
+  },
+  "subject": {
+    "reference": "Patient/015"
+  },
+  "onsetPeriod": {
+    "start": "2023-04-15T12:00:00+01:00",
+    "end": "2023-04-16T12:00:00+01:00"
+  },
+  "recordedDate": "2023-04-16T12:00:00+01:00"
+}

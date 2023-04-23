@@ -1,6 +1,6 @@
 {
   "resourceType": "Medication",
-  "id": "001",
+  "id": "002",
   "meta": {
     "profile": [
       "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/Medication"

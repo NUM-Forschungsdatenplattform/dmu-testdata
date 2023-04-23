@@ -1,0 +1,32 @@
+{
+    "resourceType": "Procedure",
+    "id": "004",
+    "meta": {
+        "profile":  [
+            "https://www.medizininformatik-initiative.de/fhir/core/modul-prozedur/StructureDefinition/Procedure"
+        ]
+    },
+    "status": "completed",
+    "category": {
+        "coding":  [
+            {
+                "system": "http://snomed.info/sct",
+                "code": "75516001",
+                "display": "Psychotherapy (regime/therapy)"
+            }
+        ]
+    },
+    "code": {
+        "coding":  [
+            {
+                "system": "http://snomed.info/sct",
+                "code": "166001",
+                "display": "Behavioral therapy (regime/therapy)"
+            }
+        ]
+    },
+    "performedDateTime": "2023-04-16",
+    "subject": {
+        "reference": "Patient/004"
+    }
+}

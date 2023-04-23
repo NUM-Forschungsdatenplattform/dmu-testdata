@@ -18,12 +18,12 @@
         ]
       },
       "system": "https://www.example.org/fhir/sid/patienten",
-      "value": "001",
+      "value": "13424253",
       "assigner": {
-        "display": "Hausarztpraxis Dr. med. Mustermann",
+        "display": "Universitätsklinikum Heidelberg",
         "identifier": {
-          "system": "http://example.com/organisation/identifier",
-          "value": "001234567"
+          "system": "http://fhir.de/NamingSystem/arge-ik/iknr",
+          "value": "123140015"
         }
       }
     },
@@ -37,13 +37,13 @@
           }
         ]
       },
-      "system": "http://fhir.de/NamingSystem/gkv/kvid-10",
-      "value": "0123456789",
+      "system": "http://fhir.de/sid/gkv/kvid-10",
+      "value": "A999919939",
       "assigner": {
         "identifier": {
           "use": "official",
-          "system": "http://example.de/aok/identifier",
-          "value": "5678910"
+          "system": "http://fhir.de/sid/arge-ik/iknr",
+          "value": "210312322"
         }
       }
     }
@@ -51,31 +51,26 @@
   "name": [
     {
       "use": "official",
-      "family": "Doe",
-      "given": ["John"]
+      "family": "Schreiber",
+      "given": [
+        "Sebastian"
+      ]
     }
   ],
   "address": [
     {
       "type": "both",
-      "line": ["Kölner Straße 4711"],
-      "city": "Düsseldorf",
-      "postalCode": "40210",
+      "line": [
+        "Teststraße 1"
+      ],
+      "city": "Heidelberg",
+      "postalCode": "69115",
       "country": "DE"
     }
   ],
   "gender": "male",
-  "_gender": {
-    "extension": [
-      {
-        "url": "http://fhir.de/StructureDefinition/gender-amtlich-de",
-        "valueCoding": {
-          "system": "http://fhir.de/CodeSystem/gender-amtlich-de",
-          "code": "M",
-          "display": "männlich"
-        }
-      }
-    ]
-  },
-  "birthDate": "1956-10-12"
+  "birthDate": "1997-03-04",
+  "managingOrganization": {
+    "reference": "Organization/001"
+  }
 }

@@ -1,0 +1,59 @@
+{
+  "resourceType": "Medication",
+  "id": "001",
+  "meta": {
+    "profile": [
+      "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/Medication"
+    ]
+  },
+  "code": {
+    "coding": [
+      {
+        "code": "00370955",
+        "system": "http://fhir.de/CodeSystem/ifa/pzn",
+        "display": "Cisplatin 100 mg/100 ml Injektionslösung"
+      }
+    ]
+  },
+  "form": {
+    "coding": [
+      {
+        "code": "11210000",
+        "system": "http://standardterms.edqm.eu",
+        "display": "Solution for infusion"
+      }
+    ]
+  },
+  "ingredient": [
+    {
+      "itemCodeableConcept": {
+        "coding": [
+          {
+            "code": "Q20Q21Q62J",
+            "system": "http://fdasis.nlm.nih.gov",
+            "display": "CISPLATIN"
+          },
+          {
+            "code": "387318005",
+            "system": "http://snomed.info/sct",
+            "display": "Cisplatin (substance)"
+          }
+        ]
+      },
+      "strength": {
+        "numerator": {
+          "value": 50,
+          "code": "mg",
+          "system": "http://unitsofmeasure.org",
+          "unit": "milligram"
+        },
+        "denominator": {
+          "value": 50,
+          "code": "mL",
+          "system": "http://unitsofmeasure.org",
+          "unit": "milliliter"
+        }
+      }
+    }
+  ]
+}
