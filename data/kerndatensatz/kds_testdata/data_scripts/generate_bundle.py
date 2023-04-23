@@ -1,9 +1,15 @@
 import os
 import json
 # Define the folder where the separate JSON files are stored
+abs_path = os.path.abspath(__file__)
+dir_name = os.path.dirname(abs_path)
+base_path = os.path.dirname(dir_name)
+
+
+
 patient = "001"
-in_path = "/home/gregor/Desktop/kds_testdata/Patients/001/resources"
-outpath = "/home/gregor/Desktop/kds_testdata/Patients/001/bundle.json"
+in_path = os.path.join(base_path, f"Patients/{patient}/resources")
+outpath = os.path.join(base_path, f"Patients/{patient}/patient_{patient}.json")
 
 bundle_header_str = '''
 {

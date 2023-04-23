@@ -23,7 +23,7 @@
     ],
     "class": {
         "code": "AMB",
-        "display": "Ambulatory",
+        "display": "ambulatory",
         "system": "http://hl7.org/fhir/v3/ActCode/cs.html"
     },
     "subject": {
@@ -44,6 +44,6 @@
     ],
     "period": {
         "start": "2023-04-12T07:00:00+01:00",
-        "end": "202-04-13T05:00:00+01:00"
+        "end": "2023-04-13T05:00:00+01:00"
     }
 }

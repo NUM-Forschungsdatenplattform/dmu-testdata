@@ -18,12 +18,12 @@
         {
           "code": "10219000",
           "system": "http://standardterms.edqm.eu",
-          "unit": "Tablet"
+          "display": "Tablet"
         }
       ]
     }
   },
-  "effectiveDatetime": "2023-04-16T12:00:00+01:00",
+  "effectiveDateTime": "2023-04-16T12:00:00+01:00",
   "medicationReference": {
     "reference": "Medication/001"
   },
