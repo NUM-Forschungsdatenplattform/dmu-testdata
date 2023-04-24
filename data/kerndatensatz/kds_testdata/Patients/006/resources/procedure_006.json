@@ -1,0 +1,32 @@
+{
+  "resourceType": "Procedure",
+  "id": "006",
+  "meta": {
+    "profile": [
+      "https://www.medizininformatik-initiative.de/fhir/core/modul-prozedur/StructureDefinition/Procedure"
+    ]
+  },
+  "status": "completed",
+  "category": {
+    "coding": [
+      {
+        "system": "http://snomed.info/sct",
+        "code": "441985002",
+        "display": "Imaging of heart (procedure)"
+      }
+    ]
+  },
+  "code": {
+    "coding": [
+      {
+        "system": "http://snomed.info/sct",
+        "code": "40701008",
+        "display": "Echocardiography (procedure)"
+      }
+    ]
+  },
+  "performedDateTime": "2023-04-16",
+  "subject": {
+    "reference": "Patient/006"
+  }
+}

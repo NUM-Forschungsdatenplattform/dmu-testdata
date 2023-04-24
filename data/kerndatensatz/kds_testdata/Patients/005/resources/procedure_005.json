@@ -1,32 +1,32 @@
 {
-    "resourceType": "Procedure",
-    "id": "001",
-    "meta": {
-        "profile":  [
-            "https://www.medizininformatik-initiative.de/fhir/core/modul-prozedur/StructureDefinition/Procedure"
-        ]
-    },
-    "status": "completed",
-    "category": {
-        "coding":  [
-            {
-                "system": "http://snomed.info/sct",
-                "code": "29303009",
-                "display": "Electrocardiographic procedure (procedure)"
-            }
-        ]
-    },
-    "code": {
-        "coding":  [
-            {
-                "system": "http://snomed.info/sct",
-                "code": "268400002",
-                "display": "12 lead electrocardiogram (procedure)"
-            }
-        ]
-    },
-    "performedDateTime": "2023-04-16",
-    "subject": {
-        "reference": "Patient/001"
-    }
+  "resourceType": "Procedure",
+  "id": "005",
+  "meta": {
+    "profile": [
+      "https://www.medizininformatik-initiative.de/fhir/core/modul-prozedur/StructureDefinition/Procedure"
+    ]
+  },
+  "status": "completed",
+  "category": {
+    "coding": [
+      {
+        "system": "http://snomed.info/sct",
+        "code": "385450002",
+        "display": "Operation on tonsils (procedure)"
+      }
+    ]
+  },
+  "code": {
+    "coding": [
+      {
+        "system": "http://snomed.info/sct",
+        "code": "173422009",
+        "display": "Tonsillectomy (procedure)"
+      }
+    ]
+  },
+  "performedDateTime": "2023-04-16",
+  "subject": {
+    "reference": "Patient/005"
+  }
 }

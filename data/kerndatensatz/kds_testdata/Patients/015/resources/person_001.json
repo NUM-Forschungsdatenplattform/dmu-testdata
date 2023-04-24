@@ -1,6 +1,6 @@
 {
   "resourceType": "Patient",
-  "id": "002",
+  "id": "015",
   "meta": {
     "profile": [
       "https://www.medizininformatik-initiative.de/fhir/core/modul-person/StructureDefinition/Patient"
@@ -18,7 +18,7 @@
         ]
       },
       "system": "https://www.example.org/fhir/sid/patienten",
-      "value": "42285243",
+      "value": "42287243",
       "assigner": {
         "display": "Heidelberg",
         "identifier": {
@@ -38,7 +38,7 @@
         ]
       },
       "system": "http://fhir.de/sid/gkv/kvid-10",
-      "value": "A999999999",
+      "value": "A749199829",
       "assigner": {
         "identifier": {
           "use": "official",
@@ -51,39 +51,22 @@
   "name": [
     {
       "use": "official",
-      "family": "Müller",
-      "given": [
-        "Dimitri",
-        "Herbert"
-      ]
+      "family": "Meier",
+      "given": ["Max"]
     }
   ],
   "address": [
     {
       "type": "both",
-      "line": [
-        "Ludwigshafenener Str. 2"
-      ],
+      "line": ["Test Str. 1"],
       "city": "Mannheim",
       "postalCode": "68397",
       "country": "DE"
     }
   ],
-  "gender": "other",
-  "_gender": {
-    "extension": [
-      {
-        "url": "http://fhir.de/StructureDefinition/gender-amtlich-de",
-        "valueCoding": {
-          "system": "http://fhir.de/CodeSystem/gender-amtlich-de",
-          "code": "D",
-          "display": "divers"
-        }
-      }
-    ]
-  },
-  "birthDate": "1985-11-24",
+  "gender": "male",
+  "birthDate": "1964-10-03",
   "managingOrganization": {
-    "reference": "Organization/002"
+    "reference": "Organization/001"
   }
 }

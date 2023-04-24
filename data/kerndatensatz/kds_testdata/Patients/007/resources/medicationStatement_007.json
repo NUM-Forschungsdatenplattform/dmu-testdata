@@ -1,0 +1,44 @@
+{
+  "resourceType": "MedicationStatement",
+  "id": "007",
+  "meta": {
+    "profile": [
+      "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/MedicationStatement"
+    ]
+  },
+  "dosage": [
+    {
+      "route": {
+        "coding": [
+          {
+            "code": "20053000",
+            "system": "http://standardterms.edqm.eu",
+            "display": "Oral use"
+          }
+        ]
+      },
+      "text": "3 Tabletten am Tag",
+      "timing": {
+        "repeat": {
+          "frequency": 3,
+          "period": 1,
+          "periodUnit": "d"
+        }
+      }
+    }
+  ],
+  "effectiveDateTime": "2023-04-16T12:00:00+01:00",
+  "medicationCodeableConcept": {
+    "coding": [
+      {
+        "code": "11013626",
+        "system": "http://fhir.de/CodeSystem/ifa/pzn",
+        "display": "Ketoconazole HRA 200 mg"
+      }
+    ]
+  },
+  "status": "active",
+  "subject": {
+    "reference": "Patient/007"
+  }
+}

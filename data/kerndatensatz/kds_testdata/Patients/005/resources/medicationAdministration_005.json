@@ -1,6 +1,6 @@
 {
   "resourceType": "MedicationAdministration",
-  "id": "001",
+  "id": "005",
   "meta": {
     "profile": [
       "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/MedicationAdministration"
@@ -8,7 +8,7 @@
   },
   "dosage": {
     "dose": {
-      "value": 3,
+      "value": 980,
       "code": "mg",
       "system": "http://unitsofmeasure.org",
       "unit": "mg"
@@ -25,10 +25,10 @@
   },
   "effectiveDateTime": "2023-04-16T12:00:00+01:00",
   "medicationReference": {
-    "reference": "Medication/001"
+    "reference": "Medication/005"
   },
   "status": "completed",
   "subject": {
-    "reference": "Patient/001"
+    "reference": "Patient/005"
   }
 }

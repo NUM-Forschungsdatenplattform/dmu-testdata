@@ -52,18 +52,13 @@
     {
       "use": "official",
       "family": "Meier",
-      "given": [
-        "Jon",
-        "Jeremy"
-      ]
+      "given": ["Jon", "Jeremy"]
     }
   ],
   "address": [
     {
       "type": "both",
-      "line": [
-        "Testgasse 1"
-      ],
+      "line": ["Testgasse 1"],
       "city": "Münser",
       "postalCode": "48167",
       "country": "DE"
@@ -82,7 +77,7 @@
       }
     ]
   },
-  "birthDate": "1992-03-12",
+  "birthDate": "1991-02-12",
   "managingOrganization": {
     "reference": "Organization/001"
   }

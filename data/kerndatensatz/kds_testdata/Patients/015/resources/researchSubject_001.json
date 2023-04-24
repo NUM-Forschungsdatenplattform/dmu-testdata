@@ -1,6 +1,6 @@
 {
   "resourceType": "ResearchSubject",
-  "id": "001",
+  "id": "015",
   "meta": {
     "profile": [
       "https://www.medizininformatik-initiative.de/fhir/core/modul-person/StructureDefinition/ResearchSubject"
@@ -17,7 +17,7 @@
         ]
       },
       "system": "https://www.example.org/fhir/core/sid/SubjectIdentificationCode",
-      "value": "12345"
+      "value": "72325"
     }
   ],
   "status": "candidate",
@@ -28,7 +28,7 @@
     "reference": "ResearchStudy/Test-Studie"
   },
   "individual": {
-    "reference": "Patient/001"
+    "reference": "Patient/015"
   },
   "consent": {
     "reference": "Consent/001"

@@ -11,33 +11,22 @@
       "route": {
         "coding": [
           {
-            "code": "20053000",
+            "code": "11210000",
             "system": "http://standardterms.edqm.eu",
-            "display": "Oral use"
+            "display": "Solution for infusion"
           }
         ]
       },
-      "text": "1 Tablette morgens",
-      "timing": {
-        "repeat": {
-          "frequency": 1,
-          "offset": 30,
-          "period": 1,
-          "periodUnit": "d",
-          "when": [
-            "ACM"
-          ]
-        }
-      }
+      "text": "1 Tablette morgens"
     }
   ],
   "effectiveDateTime": "2023-04-16T12:00:00+01:00",
   "medicationCodeableConcept": {
     "coding": [
       {
-        "code": "07728561",
+        "code": "09517006",
         "system": "http://fhir.de/CodeSystem/ifa/pzn",
-        "display": "Ibuprofen 200 MG Oral Tablet"
+        "display": "Adrenalin 1:1000 InfectoPharm® 1 mg/ml"
       }
     ]
   },
