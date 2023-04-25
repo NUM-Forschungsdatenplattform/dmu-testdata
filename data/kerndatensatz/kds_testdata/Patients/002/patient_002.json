@@ -1,0 +1,845 @@
+{
+    "resourceType": "Bundle",
+    "id": "002",
+    "type": "transaction",
+    "entry": [
+        {
+            "resourceType": "Condition",
+            "id": "001",
+            "meta": {
+                "profile": [
+                    "https://www.medizininformatik-initiative.de/fhir/core/modul-diagnose/StructureDefinition/Diagnose"
+                ]
+            },
+            "clinicalStatus": {
+                "coding": [
+                    {
+                        "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+                        "code": "active"
+                    }
+                ]
+            },
+            "verificationStatus": {
+                "coding": [
+                    {
+                        "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+                        "code": "confirmed"
+                    }
+                ]
+            },
+            "category": [
+                {
+                    "coding": [
+                        {
+                            "system": "http://terminology.hl7.org/CodeSystem/condition-category",
+                            "code": "problem-list-item"
+                        }
+                    ]
+                }
+            ],
+            "severity": {
+                "coding": [
+                    {
+                        "system": "http://snomed.info/sct",
+                        "code": "371923003",
+                        "display": "Malignant neoplasm (disorder)"
+                    }
+                ]
+            },
+            "code": {
+                "coding": [
+                    {
+                        "system": "http://snomed.info/sct",
+                        "code": "94087009",
+                        "display": "Primary malignant neoplasm of testis"
+                    },
+                    {
+                        "system": "http://fhir.de/CodeSystem/dimdi/icd-10-gm",
+                        "code": "C62",
+                        "display": "Bösartige Neubildung des Hodens"
+                    }
+                ]
+            },
+            "subject": {
+                "reference": "Patient/002"
+            },
+            "onsetPeriod": {
+                "start": "2023-04-14T12:00:00+01:00",
+                "end": "2023-04-16T12:00:00+01:00"
+            },
+            "recordedDate": "2023-04-16T12:00:00+01:00",
+            "fullUrl": "Condition/001",
+            "request": {
+                "method": "POST",
+                "url": "Condition"
+            }
+        },
+        {
+            "resourceType": "Medication",
+            "id": "001",
+            "meta": {
+                "profile": [
+                    "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/Medication"
+                ]
+            },
+            "code": {
+                "coding": [
+                    {
+                        "code": "00370955",
+                        "system": "http://fhir.de/CodeSystem/ifa/pzn",
+                        "display": "Cisplatin 100 mg/100 ml Injektionslösung"
+                    }
+                ]
+            },
+            "form": {
+                "coding": [
+                    {
+                        "code": "11210000",
+                        "system": "http://standardterms.edqm.eu",
+                        "display": "Solution for infusion"
+                    }
+                ]
+            },
+            "ingredient": [
+                {
+                    "itemCodeableConcept": {
+                        "coding": [
+                            {
+                                "code": "Q20Q21Q62J",
+                                "system": "http://fdasis.nlm.nih.gov",
+                                "display": "CISPLATIN"
+                            },
+                            {
+                                "code": "387318005",
+                                "system": "http://snomed.info/sct",
+                                "display": "Cisplatin (substance)"
+                            }
+                        ]
+                    },
+                    "strength": {
+                        "numerator": {
+                            "value": 50,
+                            "code": "mg",
+                            "system": "http://unitsofmeasure.org",
+                            "unit": "milligram"
+                        },
+                        "denominator": {
+                            "value": 50,
+                            "code": "mL",
+                            "system": "http://unitsofmeasure.org",
+                            "unit": "milliliter"
+                        }
+                    }
+                }
+            ],
+            "fullUrl": "Medication/001",
+            "request": {
+                "method": "POST",
+                "url": "Medication"
+            }
+        },
+        {
+            "resourceType": "Patient",
+            "id": "002",
+            "meta": {
+                "profile": [
+                    "https://www.medizininformatik-initiative.de/fhir/core/modul-person/StructureDefinition/Patient"
+                ]
+            },
+            "identifier": [
+                {
+                    "use": "usual",
+                    "type": {
+                        "coding": [
+                            {
+                                "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+                                "code": "MR"
+                            }
+                        ]
+                    },
+                    "system": "https://www.example.org/fhir/sid/patienten",
+                    "value": "42285243",
+                    "assigner": {
+                        "display": "Heidelberg",
+                        "identifier": {
+                            "system": "http://fhir.de/NamingSystem/arge-ik/iknr",
+                            "value": "261101015"
+                        }
+                    }
+                },
+                {
+                    "use": "official",
+                    "type": {
+                        "coding": [
+                            {
+                                "system": "http://fhir.de/CodeSystem/identifier-type-de-basis",
+                                "code": "GKV"
+                            }
+                        ]
+                    },
+                    "system": "http://fhir.de/sid/gkv/kvid-10",
+                    "value": "A999999999",
+                    "assigner": {
+                        "identifier": {
+                            "use": "official",
+                            "system": "http://fhir.de/sid/arge-ik/iknr",
+                            "value": "260326822"
+                        }
+                    }
+                }
+            ],
+            "name": [
+                {
+                    "use": "official",
+                    "family": "Müller",
+                    "given": [
+                        "Dimitri",
+                        "Herbert"
+                    ]
+                }
+            ],
+            "address": [
+                {
+                    "type": "both",
+                    "line": [
+                        "Ludwigshafenener Str. 2"
+                    ],
+                    "city": "Mannheim",
+                    "postalCode": "68397",
+                    "country": "DE"
+                }
+            ],
+            "gender": "other",
+            "_gender": {
+                "extension": [
+                    {
+                        "url": "http://fhir.de/StructureDefinition/gender-amtlich-de",
+                        "valueCoding": {
+                            "system": "http://fhir.de/CodeSystem/gender-amtlich-de",
+                            "code": "D",
+                            "display": "divers"
+                        }
+                    }
+                ]
+            },
+            "birthDate": "1985-11-24",
+            "managingOrganization": {
+                "reference": "Organization/002"
+            },
+            "fullUrl": "Patient/002",
+            "request": {
+                "method": "POST",
+                "url": "Patient"
+            }
+        },
+        {
+            "resourceType": "ServiceRequest",
+            "id": "001",
+            "meta": {
+                "profile": [
+                    "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/ServiceRequestLab"
+                ]
+            },
+            "identifier": [
+                {
+                    "type": {
+                        "coding": [
+                            {
+                                "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+                                "code": "PLAC"
+                            }
+                        ]
+                    },
+                    "system": "https://example.org/fhir/sid/anforderung-lab-identifier",
+                    "value": "1234567890",
+                    "assigner": {
+                        "identifier": {
+                            "system": "https://www.medizininformatik-initiative.de/fhir/core/CodeSystem/core-location-identifier",
+                            "value": "DIZ-ID"
+                        }
+                    }
+                }
+            ],
+            "status": "completed",
+            "intent": "order",
+            "category": [
+                {
+                    "coding": [
+                        {
+                            "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                            "code": "laboratory"
+                        }
+                    ]
+                }
+            ],
+            "code": {
+                "coding": [
+                    {
+                        "system": "http://loinc.org",
+                        "code": "38483-4",
+                        "display": "Creatinine [Mass/volume] in Blood"
+                    }
+                ]
+            },
+            "subject": {
+                "reference": "Patient/002"
+            },
+            "authoredOn": "2023-04-16T12:00:00+01:00",
+            "specimen": [
+                {
+                    "reference": "Specimen/001"
+                }
+            ],
+            "fullUrl": "ServiceRequest/001",
+            "request": {
+                "method": "POST",
+                "url": "ServiceRequest"
+            }
+        },
+        {
+            "resourceType": "Procedure",
+            "id": "002",
+            "meta": {
+                "profile": [
+                    "https://www.medizininformatik-initiative.de/fhir/core/modul-prozedur/StructureDefinition/Procedure"
+                ]
+            },
+            "status": "completed",
+            "category": {
+                "coding": [
+                    {
+                        "system": "http://snomed.info/sct",
+                        "code": "713541000",
+                        "display": "Removal of entire genital organ (procedure)"
+                    }
+                ]
+            },
+            "code": {
+                "coding": [
+                    {
+                        "system": "http://snomed.info/sct",
+                        "code": "236334001",
+                        "display": "Total orchidectomy (procedure)"
+                    }
+                ]
+            },
+            "performedDateTime": "2023-04-16",
+            "subject": {
+                "reference": "Patient/002"
+            },
+            "fullUrl": "Procedure/002",
+            "request": {
+                "method": "POST",
+                "url": "Procedure"
+            }
+        },
+        {
+            "resourceType": "ResearchSubject",
+            "id": "002",
+            "meta": {
+                "profile": [
+                    "https://www.medizininformatik-initiative.de/fhir/core/modul-person/StructureDefinition/ResearchSubject"
+                ]
+            },
+            "identifier": [
+                {
+                    "type": {
+                        "coding": [
+                            {
+                                "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+                                "code": "ANON"
+                            }
+                        ]
+                    },
+                    "system": "https://www.example.org/fhir/core/sid/SubjectIdentificationCode",
+                    "value": "11345"
+                }
+            ],
+            "status": "candidate",
+            "period": {
+                "start": "2023-04-16"
+            },
+            "study": {
+                "reference": "ResearchStudy/001"
+            },
+            "individual": {
+                "reference": "Patient/002"
+            },
+            "consent": {
+                "reference": "Consent/001"
+            },
+            "fullUrl": "ResearchSubject/002",
+            "request": {
+                "method": "POST",
+                "url": "ResearchSubject"
+            }
+        },
+        {
+            "resourceType": "DiagnosticReport",
+            "id": "001",
+            "meta": {
+                "profile": [
+                    "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/DiagnosticReportLab"
+                ]
+            },
+            "identifier": [
+                {
+                    "type": {
+                        "coding": [
+                            {
+                                "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+                                "code": "FILL"
+                            }
+                        ]
+                    },
+                    "system": "https://example.org/fhir/sid/test-befund",
+                    "value": "0987654321",
+                    "assigner": {
+                        "identifier": {
+                            "system": "https://www.medizininformatik-initiative.de/fhir/core/CodeSystem/core-location-identifier",
+                            "value": "DIZ-ID"
+                        }
+                    }
+                }
+            ],
+            "basedOn": [
+                {
+                    "reference": "ServiceRequest/001"
+                }
+            ],
+            "status": "final",
+            "category": [
+                {
+                    "coding": [
+                        {
+                            "system": "http://terminology.hl7.org/CodeSystem/v2-0074",
+                            "code": "LAB"
+                        },
+                        {
+                            "system": "http://loinc.org",
+                            "code": "26436-6",
+                            "display": "Laboratory studies (set)"
+                        }
+                    ]
+                }
+            ],
+            "code": {
+                "coding": [
+                    {
+                        "system": "http://loinc.org",
+                        "code": "11502-2",
+                        "display": "Laboratory report"
+                    }
+                ]
+            },
+            "subject": {
+                "reference": "Patient/001"
+            },
+            "effectiveDateTime": "2023-04-16T12:00:00+01:00",
+            "issued": "2023-04-16T12:00:00+01:00",
+            "result": [
+                {
+                    "reference": "Observation/001"
+                }
+            ],
+            "fullUrl": "DiagnosticReport/001",
+            "request": {
+                "method": "POST",
+                "url": "DiagnosticReport"
+            }
+        },
+        {
+            "resourceType": "Encounter",
+            "id": "001",
+            "meta": {
+                "profile": [
+                    "https://www.medizininformatik-initiative.de/fhir/core/modul-fall/StructureDefinition/KontaktGesundheitseinrichtung"
+                ]
+            },
+            "status": "finished",
+            "identifier": [
+                {
+                    "type": {
+                        "coding": [
+                            {
+                                "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+                                "code": "VN"
+                            }
+                        ]
+                    },
+                    "system": "http://medizininformatik-initiative.de/fhir/NamingSystem/Aufnahmenummer/PraxisMustermann",
+                    "value": "F_0000069"
+                }
+            ],
+            "class": {
+                "code": "AMB",
+                "display": "ambulatory",
+                "system": "http://hl7.org/fhir/v3/ActCode/cs.html"
+            },
+            "type": [
+                {
+                    "coding": [
+                        {
+                            "system": "http://snomed.info/sct",
+                            "code": "162673000",
+                            "display": "General examination of patient (procedure)"
+                        }
+                    ],
+                    "text": "General examination of patient (procedure)"
+                }
+            ],
+            "subject": {
+                "reference": "Patient/002"
+            },
+            "serviceProvider": {
+                "identifier": {
+                    "system": "http://medizininformatik-initiative.de/fhir/NamingSystem/Einrichtungsidentifikator/PraxisMustermann",
+                    "value": "260123451_PraxisMustermann"
+                }
+            },
+            "diagnosis": [
+                {
+                    "condition": {
+                        "reference": "Condition/001"
+                    }
+                }
+            ],
+            "period": {
+                "start": "2023-04-12T07:00:00+01:00",
+                "end": "2023-04-13T05:00:00+01:00"
+            },
+            "fullUrl": "Encounter/001",
+            "request": {
+                "method": "POST",
+                "url": "Encounter"
+            }
+        },
+        {
+            "resourceType": "MedicationAdministration",
+            "id": "002",
+            "meta": {
+                "profile": [
+                    "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/MedicationAdministration"
+                ]
+            },
+            "dosage": {
+                "dose": {
+                    "value": 50,
+                    "code": "mg",
+                    "system": "http://unitsofmeasure.org",
+                    "unit": "mg"
+                },
+                "route": {
+                    "coding": [
+                        {
+                            "code": "11210000",
+                            "system": "http://standardterms.edqm.eu",
+                            "display": "Solution for infusion"
+                        }
+                    ]
+                }
+            },
+            "effectiveDateTime": "2023-04-16T12:00:00+01:00",
+            "medicationReference": {
+                "reference": "Medication/002"
+            },
+            "status": "completed",
+            "subject": {
+                "reference": "Patient/002"
+            },
+            "fullUrl": "MedicationAdministration/002",
+            "request": {
+                "method": "POST",
+                "url": "MedicationAdministration"
+            }
+        },
+        {
+            "resourceType": "Observation",
+            "id": "002",
+            "meta": {
+                "profile": [
+                    "https://www.medizininformatik-initiative.de/fhir/core/modul-person/StructureDefinition/Vitalstatus"
+                ]
+            },
+            "status": "final",
+            "category": [
+                {
+                    "coding": [
+                        {
+                            "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                            "code": "survey"
+                        }
+                    ]
+                }
+            ],
+            "code": {
+                "coding": [
+                    {
+                        "system": "http://loinc.org",
+                        "code": "67162-8"
+                    }
+                ]
+            },
+            "subject": {
+                "reference": "Patient/002"
+            },
+            "effectiveDateTime": "2023-04-16T13:30:10+01:00",
+            "valueCodeableConcept": {
+                "coding": [
+                    {
+                        "system": "https://www.medizininformatik-initiative.de/fhir/core/modul-person/CodeSystem/Vitalstatus",
+                        "code": "L"
+                    }
+                ]
+            },
+            "fullUrl": "Observation/002",
+            "request": {
+                "method": "POST",
+                "url": "Observation"
+            }
+        },
+        {
+            "resourceType": "Observation",
+            "id": "002",
+            "meta": {
+                "profile": [
+                    "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/ObservationLab"
+                ]
+            },
+            "identifier": [
+                {
+                    "type": {
+                        "coding": [
+                            {
+                                "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+                                "code": "OBI"
+                            }
+                        ]
+                    },
+                    "system": "https://exmaple.org/fhir/sid/test-lab-results",
+                    "value": "12345-6_1212l64890",
+                    "assigner": {
+                        "identifier": {
+                            "system": "https://www.medizininformatik-initiative.de/fhir/core/CodeSystem/core-location-identifier",
+                            "value": "DIZ-ID"
+                        }
+                    }
+                }
+            ],
+            "status": "final",
+            "category": [
+                {
+                    "coding": [
+                        {
+                            "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                            "code": "laboratory",
+                            "display": "Laboratory"
+                        },
+                        {
+                            "system": "http://loinc.org",
+                            "code": "26436-6",
+                            "display": "Laboratory studies (set)"
+                        },
+                        {
+                            "system": "http://exmple.org/fhir/sid/Laborgruppe",
+                            "code": "Niere/Elektrolyte"
+                        }
+                    ]
+                }
+            ],
+            "code": {
+                "coding": [
+                    {
+                        "system": "http://loinc.org",
+                        "code": "38483-4",
+                        "display": "Creatinine [Mass/volume] in Blood"
+                    }
+                ],
+                "text": "Kreatinin"
+            },
+            "subject": {
+                "reference": "Patient/002"
+            },
+            "encounter": {
+                "reference": "Encounter/002"
+            },
+            "effectiveDateTime": "2023-04-16T12:00:00+01:00",
+            "_effectiveDateTime": {
+                "extension": [
+                    {
+                        "url": "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/QuelleKlinischesBezugsdatum",
+                        "valueCoding": {
+                            "system": "http://snomed.info/sct",
+                            "code": "399445004",
+                            "display": "Specimen collection date (observable entity)"
+                        }
+                    }
+                ]
+            },
+            "issued": "2023-04-16T12:00:00+01:00",
+            "performer": [
+                {
+                    "reference": "Organization/001",
+                    "display": "Zentrallabor"
+                }
+            ],
+            "valueQuantity": {
+                "value": 0.83,
+                "unit": "mg/dl",
+                "system": "http://unitsofmeasure.org",
+                "code": "mg/dl"
+            },
+            "interpretation": [
+                {
+                    "coding": [
+                        {
+                            "system": "http://terminology.hl7.org/CodeSystem/v2-0078",
+                            "code": "N"
+                        }
+                    ]
+                }
+            ],
+            "referenceRange": [
+                {
+                    "low": {
+                        "value": 0.6
+                    },
+                    "high": {
+                        "value": 1.2
+                    },
+                    "type": {
+                        "coding": [
+                            {
+                                "system": "http://terminology.hl7.org/CodeSystem/referencerange-meaning",
+                                "code": "normal",
+                                "display": "Normal Range"
+                            }
+                        ]
+                    }
+                }
+            ],
+            "fullUrl": "Observation/002",
+            "request": {
+                "method": "POST",
+                "url": "Observation"
+            }
+        },
+        {
+            "resourceType": "MedicationStatement",
+            "id": "002",
+            "meta": {
+                "profile": [
+                    "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/MedicationStatement"
+                ]
+            },
+            "dosage": [
+                {
+                    "route": {
+                        "coding": [
+                            {
+                                "code": "11210000",
+                                "system": "http://standardterms.edqm.eu",
+                                "display": "Solution for infusion"
+                            }
+                        ]
+                    },
+                    "text": "1 Ampulle Cisplatin 50 mg/ 50 ml Injektionslösung",
+                    "timing": {
+                        "repeat": {
+                            "frequency": 1,
+                            "period": 1,
+                            "periodUnit": "wk",
+                            "when": [
+                                "CD"
+                            ]
+                        }
+                    }
+                }
+            ],
+            "effectiveDateTime": "2023-04-16T12:00:00+01:00",
+            "medicationCodeableConcept": {
+                "coding": [
+                    {
+                        "code": "00370955",
+                        "system": "http://fhir.de/CodeSystem/ifa/pzn",
+                        "display": "Cisplatin 100 mg/100 ml Injektionslösung"
+                    }
+                ]
+            },
+            "status": "active",
+            "subject": {
+                "reference": "Patient/002"
+            },
+            "fullUrl": "MedicationStatement/002",
+            "request": {
+                "method": "POST",
+                "url": "MedicationStatement"
+            }
+        },
+        {
+            "resourceType": "Consent",
+            "id": "001",
+            "request": {
+                "method": "POST",
+                "url": "Consent"
+            },
+            "fullUrl": "Consent/001"
+        },
+        {
+            "resourceType": "Device",
+            "id": "001",
+            "request": {
+                "method": "POST",
+                "url": "Device"
+            },
+            "fullUrl": "Device/001"
+        },
+        {
+            "resourceType": "Practitioner",
+            "id": "001",
+            "request": {
+                "method": "POST",
+                "url": "Practitioner"
+            },
+            "fullUrl": "Practitioner/001"
+        },
+        {
+            "resourceType": "Organization",
+            "id": "001",
+            "text": {
+                "status": "generated",
+                "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n\n<p>Zentrallabor</p>\n\n</div>"
+            },
+            "name": "Zentrallabor",
+            "request": {
+                "method": "POST",
+                "url": "Organization"
+            },
+            "fullUrl": "Organization/001"
+        },
+        {
+            "resourceType": "ResearchStudy",
+            "id": "001",
+            "meta": {
+                "profile": [
+                    "http://hl7.org/fhir/StructureDefinition/ResearchStudy"
+                ]
+            },
+            "status": "active",
+            "request": {
+                "method": "POST",
+                "url": "ResearchStudy"
+            },
+            "fullUrl": "ResearchStudy/001"
+        },
+        {
+            "resourceType": "Specimen",
+            "id": "001",
+            "request": {
+                "method": "POST",
+                "url": "Specimen"
+            },
+            "fullUrl": "Specimen/001"
+        }
+    ]
+}
