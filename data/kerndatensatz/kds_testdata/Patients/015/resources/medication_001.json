@@ -1,6 +1,6 @@
 {
   "resourceType": "Medication",
-  "id": "001",
+  "id": "015",
   "meta": {
     "profile": [
       "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/Medication"
@@ -9,23 +9,23 @@
   "code": {
     "coding": [
       {
-        "code": "07728561",
+        "code": "09517006",
         "system": "http://fhir.de/CodeSystem/ifa/pzn",
-        "display": "Ibuprofen 200 MG Oral Tablet"
+        "display": "Adrenalin 1:1000 InfectoPharm® 1 mg/ml"
       },
       {
-        "code": "M01AE01",
+        "code": "C01CA24",
         "system": "http://fhir.de/CodeSystem/bfarm/atc",
-        "display": "Ibuprofen"
+        "display": "Epinephrin"
       }
     ]
   },
   "form": {
     "coding": [
       {
-        "code": "10219000",
+        "code": "11210000",
         "system": "http://standardterms.edqm.eu",
-        "display": "Tablet"
+        "display": "Solution for infusion"
       }
     ]
   },
@@ -34,34 +34,29 @@
       "itemCodeableConcept": {
         "coding": [
           {
-            "code": "WK2XYI10QM",
+            "code": "YKH834O4BH",
             "system": "http://fdasis.nlm.nih.gov",
-            "display": "IBUPROFEN"
+            "display": "EPINEPHRINE"
           },
           {
-            "code": "387207008",
+            "code": "387362001",
             "system": "http://snomed.info/sct",
-            "display": "Ibuprofen (substance)"
-          },
-          {
-            "code": "15687-27-1",
-            "system": "urn:oid:2.16.840.1.113883.6.61",
-            "display": "Ibuprofen"
+            "display": "Epinephrine (substance)"
           }
         ]
       },
       "strength": {
         "numerator": {
-          "value": 200,
+          "value": 1,
           "code": "mg",
           "system": "http://unitsofmeasure.org",
           "unit": "milligram"
         },
         "denominator": {
           "value": 1,
-          "code": "10219000",
+          "code": "11201000",
           "system": "http://standardterms.edqm.eu",
-          "unit": "Tablet"
+          "unit": "Solution for injection"
         }
       }
     }

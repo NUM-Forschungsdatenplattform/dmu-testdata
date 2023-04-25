@@ -17,7 +17,7 @@
         ]
       },
       "system": "https://example.org/fhir/sid/test-befund",
-      "value": "0987654321",
+      "value": "0281654321",
       "assigner": {
         "identifier": {
           "system": "https://www.medizininformatik-initiative.de/fhir/core/CodeSystem/core-location-identifier",

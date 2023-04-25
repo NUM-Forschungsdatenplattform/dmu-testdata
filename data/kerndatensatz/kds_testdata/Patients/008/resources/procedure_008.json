@@ -1,0 +1,32 @@
+{
+  "resourceType": "Procedure",
+  "id": "008",
+  "meta": {
+    "profile": [
+      "https://www.medizininformatik-initiative.de/fhir/core/modul-prozedur/StructureDefinition/Procedure"
+    ]
+  },
+  "status": "completed",
+  "category": {
+    "coding": [
+      {
+        "system": "http://snomed.info/sct",
+        "code": "29630005",
+        "display": "Operation on pancreas (procedure)"
+      }
+    ]
+  },
+  "code": {
+    "coding": [
+      {
+        "system": "http://snomed.info/sct",
+        "code": "116031009",
+        "display": "Pylorus-sparing Whipple operation (procedure)"
+      }
+    ]
+  },
+  "performedDateTime": "2023-04-16",
+  "subject": {
+    "reference": "Patient/008"
+  }
+}

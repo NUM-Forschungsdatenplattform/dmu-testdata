@@ -1,6 +1,6 @@
 {
   "resourceType": "Condition",
-  "id": "001",
+  "id": "005",
   "meta": {
     "profile": [
       "https://www.medizininformatik-initiative.de/fhir/core/modul-diagnose/StructureDefinition/Diagnose"
@@ -19,19 +19,19 @@
       {
         "system": "http://fhir.de/CodeSystem/dimdi/icd-10-gm",
         "version": "2023",
-        "code": "I48.9",
-        "display": "Vorhofflimmern und Vorhofflattern, nicht näher bezeichnet"
+        "code": "J35.0",
+        "display": "Chronische Tonsillitis"
       },
       {
         "system": "http://snomed.info/sct",
-        "code": "49436004",
-        "display": "Atrial fibrillation (disorder)"
+        "code": "195798007",
+        "display": "Chronic adenotonsillitis (disorder)"
       }
     ],
-    "text": "Vorhofflimmern"
+    "text": "Chronische Tonsillitis"
   },
   "subject": {
-    "reference": "Patient/001"
+    "reference": "Patient/005"
   },
   "recordedDate": "2023-04-16T12:00:00+01:00"
 }

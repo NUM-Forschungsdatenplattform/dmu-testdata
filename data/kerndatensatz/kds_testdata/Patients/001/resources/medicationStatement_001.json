@@ -6,16 +6,54 @@
       "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/MedicationStatement"
     ]
   },
+  "context": {
+    "reference": "Encounter/001"
+  },
+  "dateAsserted": "2023-04-16T12:00:00+01:00",
+  "basedOn": [
+    {
+      "reference": "ServiceRequest/001"
+    }
+  ],
+  "partOf": [
+    {
+      "reference": "MedicationAdministration/001"
+    }
+  ],
   "dosage": [
     {
+      "site": {
+        "coding": [
+          {
+            "code": "261063000",
+            "system": "http://snomed.info/sct",
+            "display": "Oral cavity"
+          }
+        ]
+      },
+      "method": {
+        "coding": [
+          {
+            "code": "26643006",
+            "system": "http://snomed.info/sct",
+            "display": "Oral route (qualifier value)"
+          }
+        ]
+      },
       "route": {
         "coding": [
           {
             "code": "20053000",
             "system": "http://standardterms.edqm.eu",
             "display": "Oral use"
+          },
+          {
+            "code": "26643006",
+            "system": "http://snomed.info/sct",
+            "display": "Oral route (qualifier value)"
           }
-        ]
+        ],
+        "text": "orale Einnahme"
       },
       "text": "1 Tablette morgens",
       "timing": {
@@ -25,7 +63,35 @@
           "periodUnit": "d",
           "when": ["CM"]
         }
+      },
+      "maxDosePerPeriod": {
+        "numerator": {
+          "value": 5,
+          "unit": "Tablette",
+          "system": "http://unitsofmeasure.org",
+          "code": "Tablette"
+        },
+        "denominator": {
+          "value": 1,
+          "unit": "d",
+          "system": "http://unitsofmeasure.org",
+          "code": "d"
+        }
       }
+    }
+  ],
+  "informationSource": {
+    "reference": "Practitioner/001"
+  },
+  "reasonCode": [
+    {
+      "coding": [
+        {
+          "code": "312250003",
+          "system": "http://snomed.info/sct",
+          "display": "Atrial fibrillation"
+        }
+      ]
     }
   ],
   "effectiveDateTime": "2023-04-16T12:00:00+01:00",
@@ -39,6 +105,7 @@
     ]
   },
   "status": "active",
+
   "subject": {
     "reference": "Patient/001"
   }

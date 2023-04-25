@@ -1,0 +1,64 @@
+{
+  "resourceType": "Medication",
+  "id": "006",
+  "meta": {
+    "profile": [
+      "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/Medication"
+    ]
+  },
+  "code": {
+    "coding": [
+      {
+        "code": "01343682",
+        "system": "http://fhir.de/CodeSystem/ifa/pzn",
+        "display": "Ass-ratiopharm 100mg TAH"
+      },
+      {
+        "code": "N02BA01",
+        "system": "http://fhir.de/CodeSystem/bfarm/atc",
+        "display": "Acetylsalicylsäure"
+      }
+    ]
+  },
+  "form": {
+    "coding": [
+      {
+        "code": "10219000",
+        "system": "http://standardterms.edqm.eu",
+        "display": "Tablet"
+      }
+    ]
+  },
+  "ingredient": [
+    {
+      "itemCodeableConcept": {
+        "coding": [
+          {
+            "code": "C16H12O6",
+            "system": "http://fdasis.nlm.nih.gov",
+            "display": "ACETYLSALICYLSALICYLIC ACID"
+          },
+          {
+            "code": "387458008",
+            "system": "http://snomed.info/sct",
+            "display": "Aspirin (substance)"
+          }
+        ]
+      },
+      "strength": {
+        "numerator": {
+          "value": 100,
+          "code": "mg",
+          "system": "http://unitsofmeasure.org",
+          "unit": "milligram"
+        },
+        "denominator": {
+          "value": 1,
+          "code": "10219000",
+          "system": "http://standardterms.edqm.eu",
+          "unit": "Tablet"
+        }
+      }
+    }
+  ]
+}

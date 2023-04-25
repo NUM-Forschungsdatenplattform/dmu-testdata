@@ -1,0 +1,32 @@
+{
+  "resourceType": "Procedure",
+  "id": "007",
+  "meta": {
+    "profile": [
+      "https://www.medizininformatik-initiative.de/fhir/core/modul-prozedur/StructureDefinition/Procedure"
+    ]
+  },
+  "status": "completed",
+  "category": {
+    "coding": [
+      {
+        "system": "http://snomed.info/sct",
+        "code": "252171003",
+        "display": "Dynamic endocrine function test (procedure)"
+      }
+    ]
+  },
+  "code": {
+    "coding": [
+      {
+        "system": "http://snomed.info/sct",
+        "code": "252190006",
+        "display": "suppression test (procedure)"
+      }
+    ]
+  },
+  "performedDateTime": "2023-04-16",
+  "subject": {
+    "reference": "Patient/007"
+  }
+}

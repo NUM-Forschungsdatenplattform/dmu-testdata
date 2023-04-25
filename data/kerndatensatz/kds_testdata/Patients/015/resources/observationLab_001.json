@@ -1,6 +1,6 @@
 {
   "resourceType": "Observation",
-  "id": "001",
+  "id": "015",
   "meta": {
     "profile": [
       "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/ObservationLab"
@@ -47,11 +47,11 @@
     "coding": [
       {
         "system": "http://loinc.org",
-        "code": "74774-1",
-        "display": "Glucose [Mass/volume] in Serum, Plasma or Blood"
+        "code": "67151-1",
+        "display": "Troponin T.cardiac [Mass/volume] in Serum or Plasma by High sensitivity method"
       }
     ],
-    "text": "Glucose"
+    "text": "Troponin T"
   },
   "subject": {
     "reference": "Patient/015"
@@ -80,10 +80,10 @@
     }
   ],
   "valueQuantity": {
-    "value": 84,
-    "unit": "md/dl",
+    "value": 0.2,
+    "unit": "ug/l",
     "system": "http://unitsofmeasure.org",
-    "code": "mg/dl"
+    "code": "ug/L"
   },
   "interpretation": [
     {
@@ -98,10 +98,10 @@
   "referenceRange": [
     {
       "low": {
-        "value": 60
+        "value": 0
       },
       "high": {
-        "value": 126
+        "value": 0.4
       },
       "type": {
         "coding": [

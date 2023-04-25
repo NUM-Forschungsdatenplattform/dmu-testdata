@@ -1,6 +1,6 @@
 {
   "resourceType": "ServiceRequest",
-  "id": "001",
+  "id": "005",
   "meta": {
     "profile": [
       "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/ServiceRequestLab"
@@ -17,7 +17,7 @@
         ]
       },
       "system": "https://example.org/fhir/sid/anforderung-lab-identifier",
-      "value": "1234567890",
+      "value": "1232562810",
       "assigner": {
         "identifier": {
           "system": "https://www.medizininformatik-initiative.de/fhir/core/CodeSystem/core-location-identifier",
@@ -42,12 +42,12 @@
     "coding": [
       {
         "system": "http://example.org/fhir/CodeSystem/LabTests",
-        "code": "GroßesBlutbild"
+        "code": "CRP"
       }
     ]
   },
   "subject": {
-    "reference": "Patient/001"
+    "reference": "Patient/005"
   },
   "authoredOn": "2023-04-16T12:00:00+01:00",
   "specimen": [

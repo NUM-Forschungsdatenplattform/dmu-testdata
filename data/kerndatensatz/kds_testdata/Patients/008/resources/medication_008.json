@@ -1,0 +1,64 @@
+{
+  "resourceType": "Medication",
+  "id": "008",
+  "meta": {
+    "profile": [
+      "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/Medication"
+    ]
+  },
+  "code": {
+    "coding": [
+      {
+        "code": "07395668",
+        "system": "http://fhir.de/CodeSystem/ifa/pzn",
+        "display": "GEMCITABIN HEXAL 40 mg/ml"
+      },
+      {
+        "code": "L01BC05",
+        "system": "http://fhir.de/CodeSystem/bfarm/atc",
+        "display": "Gemcitabin"
+      }
+    ]
+  },
+  "form": {
+    "coding": [
+      {
+        "code": "11210000",
+        "system": "http://standardterms.edqm.eu",
+        "display": "Solution for infusion"
+      }
+    ]
+  },
+  "ingredient": [
+    {
+      "itemCodeableConcept": {
+        "coding": [
+          {
+            "code": "B76N6SBZ8R",
+            "system": "http://fdasis.nlm.nih.gov",
+            "display": "GEMCITABINE"
+          },
+          {
+            "code": "386920008",
+            "system": "http://snomed.info/sct",
+            "display": "Gemcitabine (substance)"
+          }
+        ]
+      },
+      "strength": {
+        "numerator": {
+          "value": 40,
+          "code": "mg",
+          "system": "http://unitsofmeasure.org",
+          "unit": "milligram"
+        },
+        "denominator": {
+          "value": 1,
+          "code": "mL",
+          "system": "http://unitsofmeasure.org",
+          "unit": "milliliter"
+        }
+      }
+    }
+  ]
+}

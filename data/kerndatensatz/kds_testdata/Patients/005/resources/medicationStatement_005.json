@@ -1,6 +1,6 @@
 {
   "resourceType": "MedicationStatement",
-  "id": "001",
+  "id": "005",
   "meta": {
     "profile": [
       "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/MedicationStatement"
@@ -17,13 +17,13 @@
           }
         ]
       },
-      "text": "1 Tablette morgens",
+      "text": "2 Tabletten, 12 Stunden Abstand",
       "timing": {
         "repeat": {
-          "frequency": 1,
+          "frequency": 2,
           "period": 1,
           "periodUnit": "d",
-          "when": ["CM"]
+          "when": ["C"]
         }
       }
     }
@@ -32,14 +32,14 @@
   "medicationCodeableConcept": {
     "coding": [
       {
-        "code": "07768170",
+        "code": "08703994",
         "system": "http://fhir.de/CodeSystem/ifa/pzn",
-        "display": "MARCUMAR Tabletten"
+        "display": "Penicillin V"
       }
     ]
   },
   "status": "active",
   "subject": {
-    "reference": "Patient/001"
+    "reference": "Patient/005"
   }
 }

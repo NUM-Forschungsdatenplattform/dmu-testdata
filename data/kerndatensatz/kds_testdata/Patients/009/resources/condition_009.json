@@ -1,0 +1,37 @@
+{
+  "resourceType": "Condition",
+  "id": "009",
+  "meta": {
+    "profile": [
+      "https://www.medizininformatik-initiative.de/fhir/core/modul-diagnose/StructureDefinition/Diagnose"
+    ]
+  },
+  "clinicalStatus": {
+    "coding": [
+      {
+        "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+        "code": "active"
+      }
+    ]
+  },
+  "code": {
+    "coding": [
+      {
+        "system": "http://fhir.de/CodeSystem/dimdi/icd-10-gm",
+        "version": "2023",
+        "code": "K59.1",
+        "display": "Funktionelle Diarrhoe"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "code": "236071009",
+        "display": "Chronic diarrhea (disorder)"
+      }
+    ],
+    "text": "Diarrhoe ungeklärter Ursache"
+  },
+  "subject": {
+    "reference": "Patient/009"
+  },
+  "recordedDate": "2023-04-16T12:00:00+01:00"
+}

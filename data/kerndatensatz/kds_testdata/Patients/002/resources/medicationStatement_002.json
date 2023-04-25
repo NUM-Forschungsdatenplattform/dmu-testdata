@@ -23,9 +23,7 @@
           "frequency": 1,
           "period": 1,
           "periodUnit": "wk",
-          "when": [
-            "CD"
-          ]
+          "when": ["CD"]
         }
       }
     }
