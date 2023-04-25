@@ -1,0 +1,43 @@
+{
+  "resourceType": "MedicationStatement",
+  "id": "003",
+  "meta": {
+    "profile": [
+      "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/MedicationStatement"
+    ]
+  },
+  "dosage": [
+    {
+      "route": {
+        "coding": [
+          {
+            "code": "20053000",
+            "system": "http://standardterms.edqm.eu",
+            "display": "Oral use"
+          }
+        ]
+      },
+      "text": "4 Tabletten täglich",
+      "timing": {
+        "repeat": {
+          "frequency": 4,
+          "period": 1,
+          "periodUnit": "d"
+        }
+      }
+    }
+  ],
+  "medicationCodeableConcept": {
+    "coding": [
+      {
+        "code": "00651329",
+        "system": "http://fhir.de/CodeSystem/ifa/pzn",
+        "display": "Metamizol 500 mg"
+      }
+    ]
+  },
+  "status": "active",
+  "subject": {
+    "reference": "Patient/003"
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "resourceType": "Medication",
+  "id": "003",
+  "meta": {
+    "profile": [
+      "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/Medication"
+    ]
+  },
+  "code": {
+    "coding": [
+      {
+        "code": "00651329",
+        "system": "http://fhir.de/CodeSystem/ifa/pzn",
+        "display": "Metamizol 500 mg"
+      },
+      {
+        "code": "M01BA07",
+        "system": "http://fhir.de/CodeSystem/bfarm/atc",
+        "display": "Metamizol und Corticosteroide"
+      }
+    ]
+  },
+  "form": {
+    "coding": [
+      {
+        "code": "10219000",
+        "system": "http://standardterms.edqm.eu",
+        "display": "Tablet"
+      }
+    ]
+  }
+}

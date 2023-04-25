@@ -1,6 +1,6 @@
 {
   "resourceType": "Patient",
-  "id": "002",
+  "id": "003",
   "meta": {
     "profile": [
       "https://www.medizininformatik-initiative.de/fhir/core/modul-person/StructureDefinition/Patient"
@@ -38,12 +38,12 @@
         ]
       },
       "system": "http://fhir.de/sid/gkv/kvid-10",
-      "value": "A999999999",
+      "value": "A999299219",
       "assigner": {
         "identifier": {
           "use": "official",
           "system": "http://fhir.de/sid/arge-ik/iknr",
-          "value": "260326822"
+          "value": "210312322"
         }
       }
     }
@@ -51,8 +51,8 @@
   "name": [
     {
       "use": "official",
-      "family": "Müller",
-      "given": ["Dimitri", "Herbert"]
+      "family": "Rawnotzki",
+      "given": ["Nalphan"]
     }
   ],
   "address": [
@@ -64,7 +64,7 @@
       "country": "DE"
     }
   ],
-  "gender": "other",
+  "gender": "male",
   "_gender": {
     "extension": [
       {
@@ -77,8 +77,8 @@
       }
     ]
   },
-  "birthDate": "1985-11-24",
+  "birthDate": "1979-02-22",
   "managingOrganization": {
-    "reference": "Organization/002"
+    "reference": "Organization/001"
   }
 }
