@@ -52,22 +52,19 @@
     {
       "use": "official",
       "family": "Schreiber",
-      "given": [
-        "Sebastian"
-      ]
+      "given": ["Sebastian"]
     }
   ],
   "address": [
     {
       "type": "both",
-      "line": [
-        "Teststraße 1"
-      ],
+      "line": ["Teststraße 1"],
       "city": "Heidelberg",
       "postalCode": "69115",
       "country": "DE"
     }
   ],
+
   "gender": "male",
   "birthDate": "1997-03-04",
   "managingOrganization": {

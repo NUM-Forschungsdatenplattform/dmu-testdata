@@ -22,11 +22,14 @@
   ],
   "status": "candidate",
   "period": {
-    "start": "2023-04-16"
+    "start": "2023-02-16",
+    "end": "2023-04-16"
   },
   "study": {
     "reference": "ResearchStudy/001"
   },
+  "assignedArm": "A",
+  "actualArm": "A",
   "individual": {
     "reference": "Patient/001"
   },
