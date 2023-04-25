@@ -78,13 +78,13 @@
                 "birthDate": "1997-03-04",
                 "managingOrganization": {
                     "reference": "Organization/001"
-                },
-                "request": {
-                    "method": "POST",
-                    "url": "Patient"
                 }
             },
-            "fullUrl": "Patient/001"
+            "fullUrl": "Patient/001",
+            "request": {
+                "method": "POST",
+                "url": "Patient"
+            }
         },
         {
             "resource": {
@@ -170,13 +170,13 @@
                 "batch": {
                     "lotNumber": "123456789",
                     "expirationDate": "2023-12-31"
-                },
-                "request": {
-                    "method": "POST",
-                    "url": "Medication"
                 }
             },
-            "fullUrl": "Medication/002"
+            "fullUrl": "Medication/002",
+            "request": {
+                "method": "POST",
+                "url": "Medication"
+            }
         },
         {
             "resource": {
@@ -250,13 +250,13 @@
                     {
                         "text": "Patient hat gewackelt, war nicht so einfach eine gute Ableitung zu bekommen"
                     }
-                ],
-                "request": {
-                    "method": "POST",
-                    "url": "Procedure"
-                }
+                ]
             },
-            "fullUrl": "Procedure/001"
+            "fullUrl": "Procedure/001",
+            "request": {
+                "method": "POST",
+                "url": "Procedure"
+            }
         },
         {
             "resource": {
@@ -346,13 +346,13 @@
                 "status": "completed",
                 "subject": {
                     "reference": "Patient/001"
-                },
-                "request": {
-                    "method": "POST",
-                    "url": "MedicationAdministration"
                 }
             },
-            "fullUrl": "MedicationAdministration/001"
+            "fullUrl": "MedicationAdministration/001",
+            "request": {
+                "method": "POST",
+                "url": "MedicationAdministration"
+            }
         },
         {
             "resource": {
@@ -414,13 +414,13 @@
                 "period": {
                     "start": "2023-04-12T07:00:00+01:00",
                     "end": "2023-04-13T05:00:00+01:00"
-                },
-                "request": {
-                    "method": "POST",
-                    "url": "Encounter"
                 }
             },
-            "fullUrl": "Encounter/001"
+            "fullUrl": "Encounter/001",
+            "request": {
+                "method": "POST",
+                "url": "Encounter"
+            }
         },
         {
             "resource": {
@@ -497,13 +497,13 @@
                             "code": "L"
                         }
                     ]
-                },
-                "request": {
-                    "method": "POST",
-                    "url": "Observation"
                 }
             },
-            "fullUrl": "Observation/002"
+            "fullUrl": "Observation/002",
+            "request": {
+                "method": "POST",
+                "url": "Observation"
+            }
         },
         {
             "resource": {
@@ -543,13 +543,13 @@
                 },
                 "consent": {
                     "reference": "Consent/001"
-                },
-                "request": {
-                    "method": "POST",
-                    "url": "ResearchSubject"
                 }
             },
-            "fullUrl": "ResearchSubject/001"
+            "fullUrl": "ResearchSubject/001",
+            "request": {
+                "method": "POST",
+                "url": "ResearchSubject"
+            }
         },
         {
             "resource": {
@@ -619,13 +619,13 @@
                             "display": "Medical student (occupation)"
                         }
                     ]
-                },
-                "request": {
-                    "method": "POST",
-                    "url": "ServiceRequest"
                 }
             },
-            "fullUrl": "ServiceRequest/001"
+            "fullUrl": "ServiceRequest/001",
+            "request": {
+                "method": "POST",
+                "url": "ServiceRequest"
+            }
         },
         {
             "resource": {
@@ -781,13 +781,13 @@
                     {
                         "text": "The patient is agitated."
                     }
-                ],
-                "request": {
-                    "method": "POST",
-                    "url": "Condition"
-                }
+                ]
             },
-            "fullUrl": "Condition/001"
+            "fullUrl": "Condition/001",
+            "request": {
+                "method": "POST",
+                "url": "Condition"
+            }
         },
         {
             "resource": {
@@ -876,13 +876,13 @@
                             "display": "Blood glucose within reference range (finding)"
                         }
                     ]
-                },
-                "request": {
-                    "method": "POST",
-                    "url": "DiagnosticReport"
                 }
             },
-            "fullUrl": "DiagnosticReport/001"
+            "fullUrl": "DiagnosticReport/001",
+            "request": {
+                "method": "POST",
+                "url": "DiagnosticReport"
+            }
         },
         {
             "resource": {
@@ -1003,13 +1003,13 @@
                 ],
                 "note": {
                     "text": "Die Köfte sind auf dem Grill"
-                },
-                "request": {
-                    "method": "POST",
-                    "url": "Observation"
                 }
             },
-            "fullUrl": "Observation/001"
+            "fullUrl": "Observation/001",
+            "request": {
+                "method": "POST",
+                "url": "Observation"
+            }
         },
         {
             "resource": {
@@ -1123,13 +1123,13 @@
                 "status": "active",
                 "subject": {
                     "reference": "Patient/001"
-                },
-                "request": {
-                    "method": "POST",
-                    "url": "MedicationStatement"
                 }
             },
-            "fullUrl": "MedicationStatement/001"
+            "fullUrl": "MedicationStatement/001",
+            "request": {
+                "method": "POST",
+                "url": "MedicationStatement"
+            }
         },
         {
             "resourceType": "Consent",

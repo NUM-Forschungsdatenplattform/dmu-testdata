@@ -34,9 +34,8 @@ def generate_bundle_entries(in_path):
           # Set the full URL of the BundleEntry to the file name
           fullUrl = f"{resource_dict['resourceType']}/{resource_dict['id']}"
           # Add the BundleEntry to the list
-          bundle_entries.append({"resource":resource_dict, "fullUrl": fullUrl})
-          resource_dict["request"] = {"method": "POST", "url": f"{resource_dict['resourceType']}"}
-  
+          request = {"method": "POST", "url": f"{resource_dict['resourceType']}"}
+          bundle_entries.append({"resource":resource_dict, "fullUrl": fullUrl, "request": request})  
   bundle_entries = add_references(bundle_entries, ref_path)
   return bundle_entries
 

@@ -39,13 +39,13 @@
                 "subject": {
                     "reference": "Patient/007"
                 },
-                "recordedDate": "2023-04-16T12:00:00+01:00",
-                "request": {
-                    "method": "POST",
-                    "url": "Condition"
-                }
+                "recordedDate": "2023-04-16T12:00:00+01:00"
             },
-            "fullUrl": "Condition/007"
+            "fullUrl": "Condition/007",
+            "request": {
+                "method": "POST",
+                "url": "Condition"
+            }
         },
         {
             "resource": {
@@ -78,13 +78,13 @@
                 "performedDateTime": "2023-04-16",
                 "subject": {
                     "reference": "Patient/007"
-                },
-                "request": {
-                    "method": "POST",
-                    "url": "Procedure"
                 }
             },
-            "fullUrl": "Procedure/007"
+            "fullUrl": "Procedure/007",
+            "request": {
+                "method": "POST",
+                "url": "Procedure"
+            }
         },
         {
             "resource": {
@@ -121,13 +121,13 @@
                 },
                 "consent": {
                     "reference": "Consent/001"
-                },
-                "request": {
-                    "method": "POST",
-                    "url": "ResearchSubject"
                 }
             },
-            "fullUrl": "ResearchSubject/007"
+            "fullUrl": "ResearchSubject/007",
+            "request": {
+                "method": "POST",
+                "url": "ResearchSubject"
+            }
         },
         {
             "resource": {
@@ -177,13 +177,13 @@
                 "period": {
                     "start": "2023-04-12T07:00:00+01:00",
                     "end": "2023-04-13T05:00:00+01:00"
-                },
-                "request": {
-                    "method": "POST",
-                    "url": "Encounter"
                 }
             },
-            "fullUrl": "Encounter/007"
+            "fullUrl": "Encounter/007",
+            "request": {
+                "method": "POST",
+                "url": "Encounter"
+            }
         },
         {
             "resource": {
@@ -218,13 +218,13 @@
                 "status": "completed",
                 "subject": {
                     "reference": "Patient/007"
-                },
-                "request": {
-                    "method": "POST",
-                    "url": "MedicationAdministration"
                 }
             },
-            "fullUrl": "MedicationAdministration/007"
+            "fullUrl": "MedicationAdministration/007",
+            "request": {
+                "method": "POST",
+                "url": "MedicationAdministration"
+            }
         },
         {
             "resource": {
@@ -342,13 +342,13 @@
                             ]
                         }
                     }
-                ],
-                "request": {
-                    "method": "POST",
-                    "url": "Observation"
-                }
+                ]
             },
-            "fullUrl": "Observation/007"
+            "fullUrl": "Observation/007",
+            "request": {
+                "method": "POST",
+                "url": "Observation"
+            }
         },
         {
             "resource": {
@@ -425,13 +425,13 @@
                 "birthDate": "1978-02-24",
                 "managingOrganization": {
                     "reference": "Organization/001"
-                },
-                "request": {
-                    "method": "POST",
-                    "url": "Patient"
                 }
             },
-            "fullUrl": "Patient/007"
+            "fullUrl": "Patient/007",
+            "request": {
+                "method": "POST",
+                "url": "Patient"
+            }
         },
         {
             "resource": {
@@ -496,13 +496,13 @@
                             }
                         }
                     }
-                ],
-                "request": {
-                    "method": "POST",
-                    "url": "Medication"
-                }
+                ]
             },
-            "fullUrl": "Medication/007"
+            "fullUrl": "Medication/007",
+            "request": {
+                "method": "POST",
+                "url": "Medication"
+            }
         },
         {
             "resource": {
@@ -547,13 +547,13 @@
                 "status": "active",
                 "subject": {
                     "reference": "Patient/007"
-                },
-                "request": {
-                    "method": "POST",
-                    "url": "MedicationStatement"
                 }
             },
-            "fullUrl": "MedicationStatement/007"
+            "fullUrl": "MedicationStatement/007",
+            "request": {
+                "method": "POST",
+                "url": "MedicationStatement"
+            }
         },
         {
             "resource": {
@@ -594,13 +594,13 @@
                             "code": "L"
                         }
                     ]
-                },
-                "request": {
-                    "method": "POST",
-                    "url": "Observation"
                 }
             },
-            "fullUrl": "Observation/007"
+            "fullUrl": "Observation/007",
+            "request": {
+                "method": "POST",
+                "url": "Observation"
+            }
         },
         {
             "resource": {
@@ -670,13 +670,13 @@
                     {
                         "reference": "Observation/007"
                     }
-                ],
-                "request": {
-                    "method": "POST",
-                    "url": "DiagnosticReport"
-                }
+                ]
             },
-            "fullUrl": "DiagnosticReport/007"
+            "fullUrl": "DiagnosticReport/007",
+            "request": {
+                "method": "POST",
+                "url": "DiagnosticReport"
+            }
         },
         {
             "resource": {
@@ -735,13 +735,13 @@
                     {
                         "reference": "Specimen/001"
                     }
-                ],
-                "request": {
-                    "method": "POST",
-                    "url": "ServiceRequest"
-                }
+                ]
             },
-            "fullUrl": "ServiceRequest/007"
+            "fullUrl": "ServiceRequest/007",
+            "request": {
+                "method": "POST",
+                "url": "ServiceRequest"
+            }
         },
         {
             "resourceType": "Consent",
