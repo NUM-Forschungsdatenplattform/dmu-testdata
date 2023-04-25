@@ -7,18 +7,19 @@ def generate_header(patient):
   bundle_header_str = f'{{"resourceType": "Bundle", "id": "{bundle_id}", "type": "{bundle_type}"}}'
   return bundle_header_str
 
+def add_to_bundle(dict, bundle_entries):
+  fullUrl = f"{dict['resourceType']}/{dict['id']}"
+  request = {"method": "POST", "url": f"{dict['resourceType']}"}
+  bundle_entries.append({"resource":dict, "fullUrl": fullUrl, "request": request})
+  return bundle_entries 
+
 def add_references(bundle_entries, ref_path):
   references = os.listdir(ref_path)
   for reference in references:
     with open(os.path.join(ref_path, reference), "r") as f:
       reference_dict = json.load(f)
       # add request
-      reference_dict["request"] = {"method": "POST", "url": f"{reference_dict['resourceType']}"}
-      # add fullUrl
-      fullUrl = f"{reference_dict['resourceType']}/{reference_dict['id']}"
-      reference_dict["fullUrl"] = fullUrl
-      # add to bundle_entries
-      bundle_entries.append(reference_dict)
+      bundle_entries = add_to_bundle(reference_dict, bundle_entries)
   return bundle_entries
 
 
@@ -31,11 +32,7 @@ def generate_bundle_entries(in_path):
       with open(file_path, "r") as f:
           # Load the JSON file as a dictionary
           resource_dict = json.load(f)
-          # Set the full URL of the BundleEntry to the file name
-          fullUrl = f"{resource_dict['resourceType']}/{resource_dict['id']}"
-          # Add the BundleEntry to the list
-          request = {"method": "POST", "url": f"{resource_dict['resourceType']}"}
-          bundle_entries.append({"resource":resource_dict, "fullUrl": fullUrl, "request": request})  
+          bundle_entries = add_to_bundle(resource_dict, bundle_entries)  
   bundle_entries = add_references(bundle_entries, ref_path)
   return bundle_entries
 

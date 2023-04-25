@@ -749,69 +749,81 @@
             }
         },
         {
-            "resourceType": "Consent",
-            "id": "001",
+            "resource": {
+                "resourceType": "Consent",
+                "id": "001"
+            },
+            "fullUrl": "Consent/001",
             "request": {
                 "method": "POST",
                 "url": "Consent"
-            },
-            "fullUrl": "Consent/001"
+            }
         },
         {
-            "resourceType": "Device",
-            "id": "001",
+            "resource": {
+                "resourceType": "Device",
+                "id": "001"
+            },
+            "fullUrl": "Device/001",
             "request": {
                 "method": "POST",
                 "url": "Device"
-            },
-            "fullUrl": "Device/001"
+            }
         },
         {
-            "resourceType": "Practitioner",
-            "id": "001",
+            "resource": {
+                "resourceType": "Practitioner",
+                "id": "001"
+            },
+            "fullUrl": "Practitioner/001",
             "request": {
                 "method": "POST",
                 "url": "Practitioner"
-            },
-            "fullUrl": "Practitioner/001"
+            }
         },
         {
-            "resourceType": "Organization",
-            "id": "001",
-            "text": {
-                "status": "generated",
-                "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n\n<p>Zentrallabor</p>\n\n</div>"
+            "resource": {
+                "resourceType": "Organization",
+                "id": "001",
+                "text": {
+                    "status": "generated",
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n\n<p>Zentrallabor</p>\n\n</div>"
+                },
+                "name": "Zentrallabor"
             },
-            "name": "Zentrallabor",
+            "fullUrl": "Organization/001",
             "request": {
                 "method": "POST",
                 "url": "Organization"
-            },
-            "fullUrl": "Organization/001"
+            }
         },
         {
-            "resourceType": "ResearchStudy",
-            "id": "001",
-            "meta": {
-                "profile": [
-                    "http://hl7.org/fhir/StructureDefinition/ResearchStudy"
-                ]
+            "resource": {
+                "resourceType": "ResearchStudy",
+                "id": "001",
+                "meta": {
+                    "profile": [
+                        "http://hl7.org/fhir/StructureDefinition/ResearchStudy"
+                    ]
+                },
+                "status": "active"
             },
-            "status": "active",
+            "fullUrl": "ResearchStudy/001",
             "request": {
                 "method": "POST",
                 "url": "ResearchStudy"
-            },
-            "fullUrl": "ResearchStudy/001"
+            }
         },
         {
-            "resourceType": "Specimen",
-            "id": "001",
+            "resource": {
+                "resourceType": "Specimen",
+                "id": "001"
+            },
+            "fullUrl": "Specimen/001",
             "request": {
                 "method": "POST",
                 "url": "Specimen"
-            },
-            "fullUrl": "Specimen/001"
+            }
         }
     ]
 }
