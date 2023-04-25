@@ -28,15 +28,13 @@ def generate_bundle_entries(in_path):
   # Loop through each file in the folder
   for file_name in os.listdir(in_path):
       file_path = os.path.join(in_path, file_name)
-      print(file_path)
       with open(file_path, "r") as f:
           # Load the JSON file as a dictionary
           resource_dict = json.load(f)
           # Set the full URL of the BundleEntry to the file name
           fullUrl = f"{resource_dict['resourceType']}/{resource_dict['id']}"
-          resource_dict["fullUrl"] = fullUrl
           # Add the BundleEntry to the list
-          bundle_entries.append(resource_dict)
+          bundle_entries.append({"resource":resource_dict, "fullUrl": fullUrl})
           resource_dict["request"] = {"method": "POST", "url": f"{resource_dict['resourceType']}"}
   
   bundle_entries = add_references(bundle_entries, ref_path)
