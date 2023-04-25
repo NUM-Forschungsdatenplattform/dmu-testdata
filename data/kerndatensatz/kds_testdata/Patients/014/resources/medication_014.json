@@ -1,0 +1,59 @@
+{
+  "resourceType": "Medication",
+  "id": "014",
+  "meta": {
+    "profile": [
+      "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/Medication"
+    ]
+  },
+  "code": {
+    "coding": [
+      {
+        "code": "14234658",
+        "system": "http://fhir.de/CodeSystem/ifa/pzn",
+        "display": "Butylscopolamin-Carinopharm 20 mg/ml"
+      }
+    ]
+  },
+  "form": {
+    "coding": [
+      {
+        "code": "11210000",
+        "system": "http://standardterms.edqm.eu",
+        "display": "Solution for infusion"
+      }
+    ]
+  },
+  "ingredient": [
+    {
+      "itemCodeableConcept": {
+        "coding": [
+          {
+            "code": "2Z3E1OF81V",
+            "system": "http://fdasis.nlm.nih.gov",
+            "display": "Butylscopolamin"
+          },
+          {
+            "code": "1156229000",
+            "system": "http://snomed.info/sct",
+            "display": "Butylscopolamine (substance)"
+          }
+        ]
+      },
+      "strength": {
+        "numerator": {
+          "value": 20,
+          "code": "mg",
+          "system": "http://unitsofmeasure.org",
+          "unit": "milligram"
+        },
+        "denominator": {
+          "value": 1,
+          "code": "ml",
+          "system": "http://unitsofmeasure.org",
+          "unit": "ml"
+        }
+      }
+    }
+  ]
+}

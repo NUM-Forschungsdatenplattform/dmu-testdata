@@ -1,0 +1,59 @@
+{
+  "resourceType": "Medication",
+  "id": "013",
+  "meta": {
+    "profile": [
+      "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/Medication"
+    ]
+  },
+  "code": {
+    "coding": [
+      {
+        "code": "11593233",
+        "system": "http://fhir.de/CodeSystem/ifa/pzn",
+        "display": "Xylometazolin Nasenspray 0,1% 10 ml"
+      }
+    ]
+  },
+  "form": {
+    "coding": [
+      {
+        "code": "10808000",
+        "system": "http://standardterms.edqm.eu",
+        "display": "Nasal spray, solution"
+      }
+    ]
+  },
+  "ingredient": [
+    {
+      "itemCodeableConcept": {
+        "coding": [
+          {
+            "code": "X5S84033NZ",
+            "system": "http://fdasis.nlm.nih.gov",
+            "display": "XYLOMETAZOLINE HYDROCHLORIDE"
+          },
+          {
+            "code": "75327003",
+            "system": "http://snomed.info/sct",
+            "display": "Xylometazoline hydrochloride (substance)"
+          }
+        ]
+      },
+      "strength": {
+        "numerator": {
+          "value": 1,
+          "code": "mg",
+          "system": "http://unitsofmeasure.org",
+          "unit": "mg"
+        },
+        "denominator": {
+          "value": 1,
+          "code": "d",
+          "system": "http://unitsofmeasure.org",
+          "unit": "d"
+        }
+      }
+    }
+  ]
+}

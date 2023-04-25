@@ -1,6 +1,6 @@
 {
   "resourceType": "DiagnosticReport",
-  "id": "001",
+  "id": "012",
   "meta": {
     "profile": [
       "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/DiagnosticReportLab"
@@ -28,7 +28,7 @@
   ],
   "basedOn": [
     {
-      "reference": "ServiceRequest/001"
+      "reference": "ServiceRequest/012"
     }
   ],
   "status": "final",
@@ -57,23 +57,13 @@
     ]
   },
   "subject": {
-    "reference": "Patient/001"
+    "reference": "Patient/012"
   },
   "effectiveDateTime": "2023-04-16T12:00:00+01:00",
   "issued": "2023-04-16T12:00:00+01:00",
   "result": [
     {
-      "reference": "Observation/001"
+      "reference": "Observation/012"
     }
-  ],
-  "conclusionCode":{
-    "coding":[
-      {
-        "system":"http://snomed.info/sct",
-        "code": "166921001",
-        "display": "Blood glucose within reference range (finding)"
-    }
-    ]
-  },
-  "conclusion": "Normoglykäm"
+  ]
 }

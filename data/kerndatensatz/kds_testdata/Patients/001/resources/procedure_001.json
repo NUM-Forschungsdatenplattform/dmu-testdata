@@ -28,5 +28,42 @@
     "performedDateTime": "2023-04-16",
     "subject": {
         "reference": "Patient/001"
-    }
+    },
+    "outcome":{
+        "coding":[
+            {
+                "system":"http://snomed.info/sct",
+                "code": "385669000",
+                "display": "Successful (qualifier value)"
+            }    
+        ]
+    },
+    "bodySite": {
+        "coding":[
+            {
+                "system":"http://snomed.info/sct",
+                "code": "181608004",
+                "display": "Entire chest wall (body structure)"
+            }
+        ]
+    },
+    "complication":{
+        "coding":[{
+            "system":"http://snomed.info/sct",
+            "code": "29717002",
+            "display": "Premature beats (disorder)"
+        }]
+    },
+    "reasonCode" : {
+        "coding":[
+            {
+                "system":"http://snomed.info/sct",
+                "code": "3424008",
+                "display": "Tachycardia (finding)"
+            }
+        ]
+    },
+    "note" : [{
+    "text" : "Patient hat gewackelt, war nicht so einfach eine gute Ableitung zu bekommen"
+  }]
 }

@@ -1,0 +1,32 @@
+{
+    "resourceType": "Procedure",
+    "id": "013",
+    "meta": {
+        "profile":  [
+            "https://www.medizininformatik-initiative.de/fhir/core/modul-prozedur/StructureDefinition/Procedure"
+        ]
+    },
+    "status": "completed",
+    "category": {
+        "coding":  [
+            {
+                "system": "http://snomed.info/sct",
+                "code": "274794006",
+                "display": "Examination of nose (procedure)"
+            }
+        ]
+    },
+    "code": {
+        "coding":  [
+            {
+                "system": "http://snomed.info/sct",
+                "code": "25570002",
+                "display": "Endoscopy of nose (procedure)"
+            }
+        ]
+    },
+    "performedDateTime": "2023-04-16",
+    "subject": {
+        "reference": "Patient/013"
+    }
+}

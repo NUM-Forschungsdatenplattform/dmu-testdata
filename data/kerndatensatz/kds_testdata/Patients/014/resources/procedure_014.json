@@ -1,0 +1,32 @@
+{
+    "resourceType": "Procedure",
+    "id": "014",
+    "meta": {
+        "profile":  [
+            "https://www.medizininformatik-initiative.de/fhir/core/modul-prozedur/StructureDefinition/Procedure"
+        ]
+    },
+    "status": "completed",
+    "category": {
+        "coding":  [
+            {
+                "system": "http://snomed.info/sct",
+                "code": "363679005",
+                "display": "Imaging (procedure)"
+            }
+        ]
+    },
+    "code": {
+        "coding":  [
+            {
+                "system": "http://snomed.info/sct",
+                "code": "16310003",
+                "display": "Ultrasonography (procedure)"
+            }
+        ]
+    },
+    "performedDateTime": "2023-04-16",
+    "subject": {
+        "reference": "Patient/014"
+    }
+}

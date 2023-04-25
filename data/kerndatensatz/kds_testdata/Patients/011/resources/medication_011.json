@@ -1,0 +1,59 @@
+{
+  "resourceType": "Medication",
+  "id": "011",
+  "meta": {
+    "profile": [
+      "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/Medication"
+    ]
+  },
+  "code": {
+    "coding": [
+      {
+        "code": "01016109",
+        "system": "http://fhir.de/CodeSystem/ifa/pzn",
+        "display": "IBUPROFEN AbZ 600 mg Filmtabletten"
+      }
+    ]
+  },
+  "form": {
+    "coding": [
+      {
+        "code": "10219000",
+        "system": "http://standardterms.edqm.eu",
+        "display": "Tablet"
+      }
+    ]
+  },
+  "ingredient": [
+    {
+      "itemCodeableConcept": {
+        "coding": [
+          {
+            "code": "WK2XYI10QM",
+            "system": "http://fdasis.nlm.nih.gov",
+            "display": "IBUPROFEN"
+          },
+          {
+            "code": "387207008",
+            "system": "http://snomed.info/sct",
+            "display": "Ibuprofen (substance)"
+          }
+        ]
+      },
+      "strength": {
+        "numerator": {
+          "value": 600,
+          "code": "mg",
+          "system": "http://unitsofmeasure.org",
+          "unit": "milligram"
+        },
+        "denominator": {
+          "value": 1,
+          "code": "10219000",
+          "system": "http://standardterms.edqm.eu",
+          "unit": "Tablet"
+        }
+      }
+    }
+  ]
+}

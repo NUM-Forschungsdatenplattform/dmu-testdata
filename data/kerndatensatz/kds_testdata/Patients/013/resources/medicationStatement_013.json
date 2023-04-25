@@ -1,0 +1,45 @@
+{
+  "resourceType": "MedicationStatement",
+  "id": "013",
+  "meta": {
+    "profile": [
+      "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/MedicationStatement"
+    ]
+  },
+  "dosage": [
+    {
+      "route": {
+        "coding": [
+          {
+            "code": "20049000",
+            "system": "http://standardterms.edqm.eu",
+            "display": "Nasal use"
+          }
+        ]
+      },
+      "text": "1 Sprühstoß",
+      "timing": {
+        "repeat": {
+          "frequency": 3,
+          "period": 1,
+          "periodUnit": "d",
+          "when": ["CM","CD","CV"]
+        }
+      }
+    }
+  ],
+  "effectiveDateTime": "2023-04-16T12:00:00+01:00",
+  "medicationCodeableConcept": {
+    "coding": [
+      {
+        "code": "75327003",
+        "system": "http://snomed.info/sct",
+        "display": "Xylometazoline hydrochloride (substance)"
+      }
+    ]
+  },
+  "status": "active",
+  "subject": {
+    "reference": "Patient/013"
+  }
+}

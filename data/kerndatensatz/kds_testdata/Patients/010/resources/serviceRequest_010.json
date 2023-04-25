@@ -1,6 +1,6 @@
 {
   "resourceType": "ServiceRequest",
-  "id": "001",
+  "id": "010",
   "meta": {
     "profile": [
       "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/ServiceRequestLab"
@@ -41,26 +41,19 @@
   "code": {
     "coding": [
       {
-        "system": "http://example.org/fhir/CodeSystem/LabTests",
-        "code": "GroßesBlutbild"
+        "system": "http://loinc.org",
+        "code": "20570-8",
+        "display": "Hematocrit [Volume Fraction] of Blood"
       }
     ]
   },
   "subject": {
-    "reference": "Patient/001"
+    "reference": "Patient/010"
   },
   "authoredOn": "2023-04-16T12:00:00+01:00",
   "specimen": [
     {
       "reference": "Specimen/001"
     }
-  ],
-  "occurrenceDateTime": "2023-04-16T13:00:00+01:00",
-  "asNeededBoolean": false,
-  "performerType":{ 
-    "coding": [{
-    "system":"http://snomed.info/sct",
-    "code": "398130009",
-    "display": "Medical student (occupation)"
-}]}
+  ]
 }

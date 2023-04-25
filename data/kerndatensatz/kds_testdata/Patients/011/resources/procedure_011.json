@@ -1,0 +1,32 @@
+{
+    "resourceType": "Procedure",
+    "id": "011",
+    "meta": {
+        "profile":  [
+            "https://www.medizininformatik-initiative.de/fhir/core/modul-prozedur/StructureDefinition/Procedure"
+        ]
+    },
+    "status": "completed",
+    "category": {
+        "coding":  [
+            {
+                "system": "http://snomed.info/sct",
+                "code": "274474001",
+                "display": "Bone immobilization (procedure)"
+            }
+        ]
+    },
+    "code": {
+        "coding":  [
+            {
+                "system": "http://snomed.info/sct",
+                "code": "179185009",
+                "display": "Primary cast immobilization of fracture (procedure)"
+            }
+        ]
+    },
+    "performedDateTime": "2023-04-16",
+    "subject": {
+        "reference": "Patient/011"
+    }
+}

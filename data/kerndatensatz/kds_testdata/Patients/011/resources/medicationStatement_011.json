@@ -1,0 +1,45 @@
+{
+  "resourceType": "MedicationStatement",
+  "id": "011",
+  "meta": {
+    "profile": [
+      "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/MedicationStatement"
+    ]
+  },
+  "dosage": [
+    {
+      "route": {
+        "coding": [
+          {
+            "code": "20053000",
+            "system": "http://standardterms.edqm.eu",
+            "display": "Oral use"
+          }
+        ]
+      },
+      "text": "4 mal täglich",
+      "timing": {
+        "repeat": {
+          "frequency": 4,
+          "period": 1,
+          "periodUnit": "d",
+          "when": ["MORN","NOON","EVE","NIGHT"]
+        }
+      }
+    }
+  ],
+  "effectiveDateTime": "2023-04-16T12:00:00+01:00",
+  "medicationCodeableConcept": {
+    "coding": [
+      {
+        "code": "01016109",
+        "system": "http://fhir.de/CodeSystem/ifa/pzn",
+        "display": "IBUPROFEN AbZ 600 mg Filmtabletten"
+      }
+    ]
+  },
+  "status": "active",
+  "subject": {
+    "reference": "Patient/011"
+  }
+}

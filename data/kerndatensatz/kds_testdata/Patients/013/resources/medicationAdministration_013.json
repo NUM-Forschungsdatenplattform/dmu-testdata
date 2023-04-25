@@ -1,0 +1,34 @@
+{
+  "resourceType": "MedicationAdministration",
+  "id": "0",
+  "meta": {
+    "profile": [
+      "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/MedicationAdministration"
+    ]
+  },
+  "dosage": {
+    "dose": {
+      "value": 1,
+      "code": "mg",
+          "system": "http://unitsofmeasure.org",
+      "unit": "mg"
+    },
+    "route": {
+      "coding": [
+        {
+          "code": "20049000",
+          "system": "http://standardterms.edqm.eu",
+          "display": "Nasal use"
+        }
+      ]
+    }
+  },
+  "effectiveDateTime": "2023-04-16T12:00:00+01:00",
+  "medicationReference": {
+    "reference": "Medication/013"
+  },
+  "status": "completed",
+  "subject": {
+    "reference": "Patient/013"
+  }
+}
