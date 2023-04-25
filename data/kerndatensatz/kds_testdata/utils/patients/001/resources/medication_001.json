@@ -1,0 +1,85 @@
+{
+  "resourceType": "Medication",
+  "id": "001",
+  "meta": {
+    "profile": [
+      "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/Medication"
+    ]
+  },
+  "identifier": [
+    {
+      "value": "123456789"
+    }
+  ],
+  "code": {
+    "coding": [
+      {
+        "code": "07768170",
+        "system": "http://fhir.de/CodeSystem/ifa/pzn",
+        "display": "MARCUMAR Tabletten"
+      },
+      {
+        "code": "B01AA04",
+        "system": "http://fhir.de/CodeSystem/bfarm/atc",
+        "display": "Phenprocoumon"
+      }
+    ]
+  },
+  "status": "active",
+  "form": {
+    "coding": [
+      {
+        "code": "10219000",
+        "system": "http://standardterms.edqm.eu",
+        "display": "Tablet"
+      }
+    ]
+  },
+  "ingredient": [
+    {
+      "itemCodeableConcept": {
+        "coding": [
+          {
+            "code": "Q08SIO485D",
+            "system": "http://fdasis.nlm.nih.gov",
+            "display": "Phenprocoumon"
+          },
+          {
+            "code": "59488002",
+            "system": "http://snomed.info/sct",
+            "display": "Phenprocoumon (substance)"
+          },
+          {
+            "code": "07826",
+            "system": "http://fhir.de/CodeSystem/ask",
+            "display": "Phenprocoumon"
+          },
+          {
+            "code": "435-97-2",
+            "system": "urn:oid:2.16.840.1.113883.6.61",
+            "display": "Phenprocoumon"
+          }
+        ]
+      },
+      "isActive": "true",
+      "strength": {
+        "numerator": {
+          "value": 3,
+          "code": "mg",
+          "system": "http://unitsofmeasure.org",
+          "unit": "milligram"
+        },
+        "denominator": {
+          "value": 1,
+          "code": "10219000",
+          "system": "http://standardterms.edqm.eu",
+          "unit": "Tablet"
+        }
+      }
+    }
+  ],
+  "batch": {
+    "lotNumber": "123456789",
+    "expirationDate": "2023-12-31"
+  }
+}

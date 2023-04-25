@@ -1,0 +1,23 @@
+{
+  "resourceType": "Procedure",
+  "id": "n001",
+  "meta": {
+    "profile": [
+      "https://www.medizininformatik-initiative.de/fhir/core/modul-prozedur/StructureDefinition/Procedure"
+    ]
+  },
+  "status": "completed",
+  "code": {
+    "coding": [
+      {
+        "system": "http://fhir.de/wrong/codesystem",
+        "code": "45595009",
+        "display": "Laparoscopic cholecystectomy (procedure)"
+      }
+    ]
+  },
+  "performedDateTime": "2023-04-16",
+  "subject": {
+    "reference": "Patient/003"
+  }
+}
