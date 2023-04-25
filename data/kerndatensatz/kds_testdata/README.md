@@ -1,5 +1,12 @@
 # kds_testdata
 
+## Test Data creation
+- manual creation
+- each patient contains one resource of each profile of the MII core dataset
+- the data is based on fictional short patient stories usually comprising of a diagnosis and a realted medication, procedure and laboratory result
+- each resource was validated after creation on simplifier against the respective mii core dataset package
+- each bundle was uploaded to a jpa-starter server
+
 Testdata kds conform
 
 ### NegativeBeispiele
